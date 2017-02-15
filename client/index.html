@@ -1,0 +1,173 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <base href="/">
+    <title>Get high quality solution for your technology project.</title>
+    <meta name="description" content="Get high quality technology solutions from our talented team of Freelance Developers and Designers. We build expert technology teams, on demand, to execute your project on time and on budget.">
+    <meta name="Keywords" content="Trusted Freelance Developers and Designers, Get a technology solutions, High quality app" > 
+    <meta name="viewport" content="width=device-width">
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <!-- build:css(client) app/vendor.css -->
+      <!-- bower:css -->
+      <link rel='stylesheet' href='bower_components/bootstrap-social/bootstrap-social.css' />
+      <link rel='stylesheet' href='bower_components/photoswipe/dist/photoswipe.css' />
+      <link rel='stylesheet' href='bower_components/photoswipe/dist/default-skin/default-skin.css' />
+      <!-- endbower -->
+    <!-- endbuild -->
+    <!-- build:css({.tmp,client}) app/app.css -->
+    <link rel="stylesheet" href="app/app.css">
+
+    <link href='https://fonts.googleapis.com/css?family=Varela+Round' rel="stylesheet" type='text/css'>
+
+    <!-- Facebook Pixel Code -->
+    <script>
+    !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+    n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+    document,'script','https://connect.facebook.net/en_US/fbevents.js');
+
+    fbq('init', '1698094533851982');
+    fbq('track', "PageView");</script>
+    <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=1698094533851982&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Facebook Pixel Code -->
+    <meta property="og:url" content="https://hackasolution.com" />
+    <meta property="og:title" content="hackasolution: Find the best language tutors." />
+    <meta property="og:description" content="Learning a language is tough; a private tutor can help you get there faster. Find the best language tutors in cities across Canada." />
+    <meta property="og:image" content="https://hackasolution.com/logo.png" />
+    <meta property="fb:app_id" content="140991899662548" />
+    <!-- FB Meta  -->
+
+  </head>
+  <body ng-app="hackasolutionApp" ng-cloak>
+    <div id="fb-root"></div>
+    <!--[if lt IE 7]>
+      <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+  
+    <navbar></navbar>
+    <sidebar></sidebar>
+    <div ui-view="" scroll></div>
+    <footer></footer>
+
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-85041714-1', 'auto');
+        ga('send', 'pageview');
+
+     </script>
+
+
+    <!--[if lt IE 9]>
+    <script src="bower_components/es5-shim/es5-shim.js"></script>
+    <script src="bower_components/json3/lib/json3.min.js"></script>
+    <![endif]-->
+    <!-- build:js({client,node_modules}) app/vendor.js -->
+      <!-- bower:js -->
+      <script src="bower_components/jquery/dist/jquery.js"></script>
+      <script src="bower_components/angular/angular.js"></script>
+      <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+      <script src="bower_components/checklist-model/checklist-model.js"></script>
+      <script src="bower_components/angular-resource/angular-resource.js"></script>
+      <script src="bower_components/ng-file-upload/ng-file-upload.js"></script>
+      <script src="bower_components/angular-cookies/angular-cookies.js"></script>
+      <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
+      <script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+      <script src="bower_components/lodash/dist/lodash.compat.js"></script>
+      <script src="bower_components/angular-socket-io/socket.js"></script>
+      <script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+      <script src="bower_components/angular-validation-match/dist/angular-validation-match.min.js"></script>
+      <script src="bower_components/underscore/underscore.js"></script>
+      <script src="bower_components/scrollmagic/scrollmagic/uncompressed/ScrollMagic.js"></script>
+      <script src="bower_components/velocity/velocity.js"></script>
+      <script src="bower_components/velocity/velocity.ui.js"></script>
+      <script src="bower_components/photoswipe/dist/photoswipe.js"></script>
+      <script src="bower_components/photoswipe/dist/photoswipe-ui-default.js"></script>
+      <script src="bower_components/waypoints/lib/noframework.waypoints.js"></script>
+      <!-- endbower -->
+      <script src="socket.io-client/socket.io.js"></script>
+      <script type="text/javascript" src="https://js.stripe.com/v2/"></script>
+      <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCqm9sz0HaeYC4UB52ORohpf3dsH9KQCIM&libraries=places"async defer></script>
+    <!-- endbuild -->
+  
+    <!-- build:js(.tmp) app/app.js -->
+      <script src="app/app.js"></script>
+      <!-- injector:js -->
+      <script src="app/admin/admin.module.js"></script>
+      <script src="app/notification/notification.module.js"></script>
+      <script src="components/Shared/Shared.module.js"></script>
+      <script src="components/auth/auth.module.js"></script>
+      <script src="components/util/util.module.js"></script>
+      <script src="app/account/account.js"></script>
+      <script src="app/account/forgotPassword/forgotPassword.controller.js"></script>
+      <script src="app/account/form-actions.js"></script>
+      <script src="app/account/multiStepForm.js"></script>
+      <script src="app/account/profile/myProfile.controller.js"></script>
+      <script src="app/account/profile/userProfile.controller.js"></script>
+      <script src="app/account/recoverPassword/recoverPassword.controller.js"></script>
+      <script src="app/account/registration/jquery.easing.min.js"></script>
+      <script src="app/account/registration/registration.controller.js"></script>
+      <script src="app/account/settings/settings.controller.js"></script>
+      <script src="app/account/signup/signup.controller.js"></script>
+      <script src="app/admin/admin.controller.js"></script>
+      <script src="app/admin/admin.router.js"></script>
+      <script src="app/app.constant.js"></script>
+      <script src="app/app.directive.js"></script>
+      <script src="app/js/angular-matchheight.min.js"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+      <script src="app/js/jquery.easybg.js"></script>
+      <script src="app/js/jquery.mCustomScrollbar.js"></script>
+      <script src="app/js/swiper.jquery.js"></script>
+      <script src="app/main/main.controller.js"></script>
+      <script src="app/main/main.js"></script>
+      <script src="app/notification/notification.controller.js"></script>
+      <script src="app/notification/notification.router.js"></script>
+      <script src="components/Global/global.service.js"></script>
+      <script src="components/Shared/Shared.data.js"></script>
+      <script src="components/Shared/Shared.service.js"></script>
+      <script src="components/Shared/user.service.js"></script>
+      <script src="components/auth/auth.service.js"></script>
+      <script src="components/auth/interceptor.service.js"></script>
+      <script src="components/auth/router.decorator.js"></script>
+      <script src="components/auth/user.service.js"></script>
+      <script src="components/fieldValue/fieldValue.directive.js"></script>
+      <script src="components/footer/footer.controller.js"></script>
+      <script src="components/footer/footer.directive.js"></script>
+      <script src="components/modal/modal.service.js"></script>
+      <script src="components/mongoose-error/mongoose-error.directive.js"></script>
+      <script src="components/navbar/navbar.controller.js"></script>
+      <script src="components/navbar/navbar.directive.js"></script>
+      <script src="components/oauth-buttons/oauth-buttons.controller.js"></script>
+      <script src="components/oauth-buttons/oauth-buttons.directive.js"></script>
+      <script src="components/profileTemplate/profile.directive.js"></script>
+      <script src="components/signinBar/Sidebar.controller.js"></script>
+      <script src="components/signinBar/signinBar.directive.js"></script>
+      <script src="components/socket/socket.service.js"></script>
+      <script src="components/util/util.service.js"></script>
+      <!-- endinjector -->
+
+    <!-- endbuild -->
+    <!--<script language="JavaScript" type="text/javascript">
+    TrustLogo("https://hackasolution.com/secure.png", "CL1", "none");
+    </script>
+    <a  href="https://www.positivessl.com/" id="comodoTL">Positive SSL Wildcard</a>-->
+    <script type="text/javascript">
+    var $zoho= $zoho || {salesiq:{values:{},ready:function(){}}};var d=document;s=d.createElement("script");s.type="text/javascript";
+    s.defer=true;s.src="https://salesiq.zoho.com/monistinc/float.ls?embedname=monistinc";
+    t=d.getElementsByTagName("script")[0];t.parentNode.insertBefore(s,t);
+    </script>
+    
+  </body>
+</html>

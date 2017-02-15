@@ -1,0 +1,62 @@
+body {
+  position: relative;
+}
+
+.panel{
+    border: 0px;
+    border-bottom: 1px solid #ddd;
+}
+.panel-group .panel+.panel{
+    margin-top: 0px;
+}
+.panel-group .panel{
+    border-radius: 0px;
+}
+.panel-heading{
+    border-radius: 0px;
+    color: #000;
+    padding: 25px 15px;
+}
+.panel-custom>.panel-heading{
+    background-color: #f5f5f5;
+}
+.panel-group .panel:last-child{
+    border-bottom: 5px solid #ddd;
+}
+
+panel-collapse .collapse.in{
+    border-bottom:0;
+}
+
+.affix-top {
+  position: relative;
+}
+
+.affix-bottom {
+  position: absolute;
+}
+
+.affix {
+    top: 100px;
+}
+
+.marginHigh {
+  margin-top: 80px;
+  section {
+    padding-top: 40px;
+  }
+}
+
+.marginLow {
+  margin-top: 0px;
+}
+
+#scrollspy {
+  .affix, 
+  .affix-bottom {
+    width: 213px;
+    @media screen and (min-width:1200px) {
+      width: 263px;
+    }
+  }
+}

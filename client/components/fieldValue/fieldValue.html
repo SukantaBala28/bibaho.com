@@ -1,0 +1,8 @@
+<span ng-if="isArray()">
+	<span ng-repeat="item in values track by $index"><span ng-show="$index==0">{{item}}</span><span ng-show="$index>0">, {{item}}</span></span>
+</span>
+<span ng-if="!isArray()">
+	<span ng-if="isDate()">{{values | date: 'mediumDate'}}</span>
+	<span ng-if="!isDate()">{{values}}</span>
+	
+</span>

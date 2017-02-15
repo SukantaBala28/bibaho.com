@@ -1,0 +1,51 @@
+<div class="page-spacer"></div>
+<header class="container">
+	<div class="row reason-row">
+		<h1>
+			Why Hackasolution?
+		</h1>
+
+		<p>
+			Many companies — both large and small — faced challenges with finding top talent, from candidate qualifications, to team dynamics, to economics that fit their financial scale. Our unique solution for hiring elite independent contractors addresses all of these concerns.
+		</p>
+	</div>
+</header>
+
+<div class="container">
+    <div class="row">
+
+        <div class="col-lg-12">
+
+            <ul class="nav-list align-center sorting-menu">
+                <li class="nav-list__item active"><a href="#Why">Why</a></li>
+                <li class="nav-list__item"><a href="#How">How</a></li>
+                <li class="nav-list__item"><a href="#What">What</a></li>
+            </ul>
+
+
+            <div class="row sorting-container" data-layout="fitRows">
+                <div class="tab-content bg-border-color medium-padding80">
+					<div id="Why" class="tab-pane fade in active">
+						<ng-include src="'app/linkedPages/why/whyHome.html'"></ng-include>
+					</div>
+					<div id="How" class="tab-pane fade">
+						<ng-include src="'app/linkedPages/why/how.html'"></ng-include>
+					</div>
+					<div id="What" class="tab-pane fade">
+						<ng-include src="'app/linkedPages/why/what.html'"></ng-include>
+					</div>
+				</div>
+            </div>
+
+        </div>
+
+    </div>
+</div>
+
+<script>
+$(document).ready(function(){
+    $(".nav-list a").click(function(){
+        $(this).tab('show');
+    });
+});
+</script>

@@ -1,0 +1,425 @@
+<div class="col-lg-8 col-md-8 col-sm-9 col-xs-12 userProfileRight">
+	<div class="widget-box transparent col-lg-12 col-md-12 col-sm-12 col-xs-12" ng-show="(profile._id===myProfile._id && myProfile.tutorFlag)">
+		<div class="widget-header widget-header-small">
+			<h2 class="widget-title smaller">
+				Public Profile 
+			</h2>
+		</div>
+	</div>
+	<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 profileHeading" ng-show="(profile._id!==myProfile._id && profile.tutorFlag) && profile.profileHeading">
+
+		{{profile.profileHeading}}
+			
+	</div>
+	<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 noPadding">
+		<div class="fieldSection">
+			<div class="profile-user-info profile-user-info-striped" ng-show="profile.tutorFlag && profile.role==='user'">
+				<div class="profile-info-row" ng-show="checkFieldVisibility(profile.profileHeading) && profile._id===myProfile._id">
+					<div class="profile-info-name"> Profile Heading: </div>
+
+					<div class="profile-info-value">
+						<span class="editable"><field-value-template values="profile.profileHeading"></field-value-template></span>
+					</div>
+				</div>
+				<div class="profile-info-row" ng-show="checkFieldVisibility(profile.hourlyRate)">
+					<div class="profile-info-name"> Hourly Rate: </div>
+
+					<!-- <div class="profile-info-value" ng-show="profile._id===myProfile._id">
+						<span class="editable">$ {{profile.hourlyRate}}</span>
+						
+					</div> -->
+					<div class="profile-info-value">
+						<span class="editable">$ {{profile.hourlyRate-0 +5}}</span>
+					</div>
+				</div>
+				<div class="profile-info-row" ng-show="checkFieldVisibility(profile.videoLink) && profile._id===myProfile._id">
+					<div class="profile-info-name"> Intro Video Link: </div>
+
+					<div class="profile-info-value">
+						<span class="editable videoLink">{{profile.videoLink}}</span>
+					</div>
+				</div>
+				<div class="profile-info-row" ng-show="checkFieldVisibility(profile.yearsOfExperience)">
+					<div class="profile-info-name"> Tutoring Experience: </div>
+
+					<div class="profile-info-value">
+						<span class="editable"><field-value-template values="profile.yearsOfExperience"></field-value-template></span>
+					</div>
+				</div>
+				<div class="profile-info-row" ng-show="checkFieldVisibility(profile.preferredTeachingLocation)">
+					<div class="profile-info-name"> Preferred Teaching Location: </div>
+
+					<div class="profile-info-value">
+						<span class="editable"><field-value-template values="profile.preferredTeachingLocation"></field-value-template></span>
+					</div>
+				</div>
+				<div class="profile-info-row" ng-show="checkFieldVisibility(profile.teachingLocation)">
+					<div class="profile-info-name"> Preferred City: </div>
+
+					<div class="profile-info-value">
+						<span class="editable"><field-value-template values="profile.teachingLocation"></field-value-template></span>
+					</div>
+				</div>
+				<div class="profile-info-row" ng-show="checkFieldVisibility(profile.hobbies)">
+					<div class="profile-info-name"> Hobbies: </div>
+
+					<div class="profile-info-value">
+						<span class="editable"><field-value-template values="profile.hobbies"></field-value-template></span>
+					</div>
+				</div>
+
+				<!-- <div class="profile-info-row" ng-show="checkFieldVisibility(profile.cancellationNotice)">
+					<div class="profile-info-name"> Cancellation Notice: </div>
+
+					<div class="profile-info-value">
+						<span class="editable"><field-value-template values="profile.cancellationNotice"></field-value-template></span>
+					</div>
+				</div> -->
+				<!-- <div class="profile-info-row" ng-show="checkFieldVisibility(profile.teachableLanguage)">
+					<div class="profile-info-name"> Languages: </div>
+
+					<div class="profile-info-value">
+						<span class="editable"><field-value-template values="profile.teachableLanguage"></field-value-template></span>
+					</div>
+				</div> -->
+			</div>
+
+			<div class="col-lg-12 col-md-12 col-sm-12 hidden-xs noPadding bookTutor marginBottom30" ng-show="profile.tutorFlag && profile.role==='user'">
+				<div class="col-lg-12 col-md-12 col-sm-12 space-10"></div>
+				<div class="availabilityTitle">
+					<h4>
+						<i class="ace-icon bigger-110 fa fa-clock-o"></i>
+						Availability
+					</h4>
+				</div>
+				
+				<div class="col-lg-12 col-md-12 col-sm-12 space-10"></div>
+				<div class="col-lg-1 col-md-1 col-sm-1 col-xs-1 noPadding">
+					<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 marginTop10 noPadding">
+					</div>
+					<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 marginTop35 noPadding" ng-repeat="dayTime in dayTime">
+						<small>{{dayTime}}</small>
+					</div>
+				</div>
+				<div class="col-lg-11 col-md-11 col-sm-11 col-xs-11 noPadding">
+					<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+						<div class="col-lg-1 col-md-1 col-sm-1 col-xs-1 weekCellHead" ng-repeat="weekDays in weekDays">
+							<small>{{weekDays}}</small>
+						</div>
+					</div>
+
+					<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 marginTop10" ng-repeat="dayTime in dayTime">
+						<div class="col-lg-1 col-md-1 col-sm-1 col-xs-1 avialableBox noPadding" ng-repeat="weekDays in weekDays" ng-click="setSchedule($parent.$index,$index)" ng-class="{true: 'availableBox-active'}[profile.weekDays[$parent.$index][$index]]">
+							<span class="scheduleText">
+								{{dayTime}}<br/>
+								{{scheduleText[$index]}}
+							</span>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="hidden-lg hidden-md hidden-sm col-xs-12 noPadding bookTutor marginBottom30" ng-show="profile.tutorFlag && profile.role==='user'">
+				<div class="col-lg-12 col-md-12 col-sm-12 space-10"></div>
+				<div class="availabilityTitle">
+					<h4>
+						<i class="ace-icon bigger-110 fa fa-clock-o"></i>
+						Availability
+					</h4>
+				</div>
+				
+				<div class="col-lg-12 col-md-12 col-sm-12 space-10"></div>
+				<div class="col-xs-2 noPadding">
+					<div class="col-xs-12 marginTop20 noPadding"></div>
+					<div class="col-xs-12 mobileWeekDays text-center" ng-repeat="weekDays in weekDays">
+						<small>{{weekDays}}</small>
+					</div>
+				</div>
+				<div class="col-xs-10 noPadding">
+					<div class="col-xs-12">
+						<div class="col-xs-4 noPadding text-center" ng-repeat="dayTime in dayTime">
+							<small>{{dayTime}}</small>
+						</div>
+					</div>
+
+					<div class="col-xs-12 marginTop10" ng-repeat="weekDays in weekDays">
+						<div class="col-xs-4 avialableBox noPadding" ng-repeat="dayTime in dayTime" ng-click="setSchedule($index,$parent.$index)" ng-class="{true: 'availableBox-active'}[profile.weekDays[$index][$parent.$index]]">
+							<div class="scheduleText">
+								{{dayTime}}<br/>
+								{{scheduleText[$parent.$index]}}
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="profile-user-info profile-user-info-striped" ng-show="myProfile.role==='admin'">
+
+				<!-- <div class="profile-info-row" ng-show="checkFieldVisibility(profile.email)">
+					<div class="profile-info-name"> Contact Email: </div>
+
+					<div class="profile-info-value">
+						<span class="editable">{{profile.email}}</span>
+					</div>
+				</div>
+				<div class="profile-info-row" ng-show="checkFieldVisibility(profile.phoneNumber)">
+					<div class="profile-info-name"> Phone Number: </div>
+
+					<div class="profile-info-value">
+						<span class="editable">{{profile.phoneNumber}}</span>
+					</div>
+				</div> -->
+				<div class="profile-info-row" ng-show="checkFieldVisibility(profile.postalAddress)">
+					<div class="profile-info-name"> Postal Address: </div>
+
+					<div class="profile-info-value">
+						<span class="editable">{{profile.postalAddress}}</span>
+					</div>
+				</div>
+				<div class="profile-info-row" ng-show="checkFieldVisibility(profile.cityName)">
+					<div class="profile-info-name"> City Name: </div>
+
+					<div class="profile-info-value">
+						<span class="editable"><field-value-template values="profile.cityName"></field-value-template></span>
+					</div>
+				</div>
+				<div class="profile-info-row" ng-show="checkFieldVisibility(profile.postalCode)">
+					<div class="profile-info-name"> Postal Code: </div>
+
+					<div class="profile-info-value">
+						<span class="editable">{{profile.postalCode}}</span>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 moreInfo noPadding" ng-show="profile.tutorFlag">
+				<div class="widget-box transparent col-sm-12">
+					<div class="widget-header widget-header-small">
+						<h4 class="widget-title smaller">
+							<i class="ace-icon fa fa-check-square-o bigger-110"></i>
+							More About <span>{{myProfile.tutorFlag ? 'Me' : profile.firstName}}</span>
+						</h4>
+					</div>
+
+					<div class="widget-body">
+						<div class="widget-main descriptionSection">
+							<div class="profile-user-info profile-user-info-striped">
+								<div class="profile-info-row">
+									<div class="profile-info-name"> Teachable Language(s) </div>
+
+									<div class="profile-info-value">
+										<span class="editable" id="username"><field-value-template values="profile.teachableLanguage"></field-value-template></span>
+									</div>
+								</div>
+
+								<div class="profile-info-row">
+									<div class="profile-info-name"> Teaching Philosophy </div>
+
+									<div class="profile-info-value">
+										<span class="editable" id="username"><field-value-template values="profile.teachingPhilosophy"></field-value-template></span>
+									</div>
+								</div>						
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="widget-box transparent col-sm-12">
+					<div class="widget-header widget-header-small header-color-blue2">
+						<h4 class="widget-title smaller">
+							<i class="ace-icon fa fa-lightbulb-o bigger-120"></i>
+							Experience
+						</h4>
+					</div>
+
+					<div class="widget-body">
+						<div class="widget-main descriptionSection">
+							<div class="profile-user-info profile-user-info-striped">
+								<div class="profile-info-row">
+									<div class="profile-info-name"> Areas of expertise </div>
+
+									<div class="profile-info-value">
+										<span class="editable" id="username"><field-value-template values="profile.areasExpertise"></field-value-template></span>
+									</div>
+								</div>
+
+								<div class="profile-info-row">
+									<div class="profile-info-name"> Relevant experience </div>
+
+									<div class="profile-info-value">
+										<span class="editable" id="username"><field-value-template values="profile.relevantExperience"></field-value-template></span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 moreInfo" ng-show="profile.tutorFlag">
+				<div class="widget-box transparent col-sm-12">
+					<div class="widget-header widget-header-small">
+						<h4 class="widget-title smaller">
+							<i class="ace-icon fa fa-check-square-o bigger-110"></i>
+							Reviews About <span>{{myProfile.tutorFlag ? 'Me' : 'Tutor'}}</span>
+						</h4>
+					</div>
+
+					<div class="widget-body">
+						<div class="widget-main descriptionSection">
+							<div class="profile-user-info profile-user-info-striped" ng-repeat="review in profile.reviews">
+								<div class="profile-info-row">
+									<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 noPadding">
+										<div class="reviewrImg"><img err-src="../assets/images/default.png" ng-src="{{profile.reviews.profilePicturePath}}" /></div>
+										
+									</div>
+									<div class="col-lg-9 col-md-9 col-sm-9 col-xs-9 reviewRateContainer">
+										<div class="reviewrName">{{review.reviewer.firstName}}</div>
+										<span class="reviewRate" readOnly="true" uib-rating ng-model="review.rate" max="nav.max" on-hover="hoveringOver(value)" on-leave="overStar = null" aria-labelledby="default-rating"></span>
+									</div>
+									<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 reviewerComment">{{review.comment}}</div>
+								</div>					
+							</div>
+						</div>
+					</div>
+				</div>
+			</div> -->
+		</div>
+	</div>
+
+	<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 noPadding" ng-show="(profile._id===myProfile._id && myProfile.tutorFlag) || (myProfile.role==='admin' && profile.tutorFlag)">
+		<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 space-4"></div>
+		<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 noPadding" >
+			<div class="widget-box transparent col-lg-12 col-md-12 col-sm-12 col-xs-12">
+				<div class="widget-header widget-header-small">
+					<br/><br/>
+					<h2 class="widget-title smaller">
+						Private Profile
+					</h2>
+					<small class="text-muted">(The information below is <b><u>not</u></b> visible on your profile - internal use only)</small>
+				</div>
+			</div>
+		</div>
+
+		<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 noPadding">
+			<div class="fieldSection">
+				<div class="profile-user-info profile-user-info-striped">
+					<div class="profile-info-row" ng-show="checkFieldVisibility(profile.gender)">
+						<div class="profile-info-name"> Gender: </div>
+
+						<div class="profile-info-value">
+							<span class="editable"><field-value-template values="profile.gender"></field-value-template></span>
+						</div>
+					</div>
+					<div class="profile-info-row" ng-show="checkFieldVisibility(profile.dateOfBirth)">
+						<div class="profile-info-name"> Date of birth: </div>
+
+						<div class="profile-info-value">
+							<span class="editable"><field-value-template values="profile.dateOfBirth"></field-value-template></span>
+						</div>
+					</div>
+					<div class="profile-info-row" ng-show="checkFieldVisibility(profile.hearFrom)">
+						<div class="profile-info-name"> Where did you hear about us? </div>
+
+						<div class="profile-info-value">
+							<span class="editable"><field-value-template values="profile.hearFrom"></field-value-template></span>
+						</div>
+					</div>
+					<div class="profile-info-row" ng-show="checkFieldVisibility(profile.contactEmail)">
+						<div class="profile-info-name"> Contact Email: </div>
+
+						<div class="profile-info-value">
+							<span class="editable">{{profile.contactEmail}}</span>
+						</div>
+					</div>
+					<div class="profile-info-row" ng-show="checkFieldVisibility(profile.phoneNumber)">
+						<div class="profile-info-name"> Phone Number: </div>
+
+						<div class="profile-info-value">
+							<span class="editable">{{profile.phoneNumber}}</span>
+						</div>
+					</div>
+					<!-- <div class="profile-info-row" ng-show="checkFieldVisibility(profile.contactDetails)">
+						<div class="profile-info-name"> Contact Details: </div>
+
+						<div class="profile-info-value">
+							<span class="editable"><field-value-template values="profile.contactDetails"></field-value-template></span>
+						</div>
+					</div> -->
+				</div>
+
+			</div>
+			<div class="col-lg-12 col-md-12 col-sm-12 space-4"></div>
+			<div class="widget-box transparent col-lg-12 col-md-12 col-sm-12 col-xs-12" ng-show="myProfile.role==='admin' && profile.role!=='user'">
+				<div class="widget-header widget-header-small header-color-blue2">
+					<h4 class="widget-title smaller">
+						<i class="ace-icon fa fa-check-square-o bigger-110"></i>
+						Reference
+					</h4>
+				</div>
+
+				<div class="widget-body">
+					<div class="widget-main descriptionSection">
+						<div class="profile-user-info profile-user-info-striped">
+							<div ng-repeat="ref in profile.reference">
+
+								<div class="profile-info-name"> Reference {{$index+1}} </div>
+
+								<div class="profile-info-value profile-info-row" ng-repeat="(key, value) in ref" ng-if="fieldMapping[key]">
+									<span class="editable" id="username">{{fieldMapping[key]}}: &nbsp; <field-value-template values="value"></field-value-template></span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 noPadding" ng-show="!profile.tutorFlag && profile.role==='user'">
+
+		<div class="fieldSection">
+			<div class="profile-user-info profile-user-info-striped">
+			
+				<div class="profile-info-row" ng-show="checkFieldVisibility(profile.cityName)">
+					<div class="profile-info-name"> City: </div>
+
+					<div class="profile-info-value">
+						<span class="editable"><field-value-template values="profile.cityName"></field-value-template></span>
+					</div>
+				</div>
+
+				<div class="profile-info-row" ng-show="checkFieldVisibility(profile.languageList)">
+					<div class="profile-info-name"> Languages Studying: </div>
+
+					<div class="profile-info-value">
+						<span class="editable"><field-value-template values="profile.languageList"></field-value-template></span>
+					</div>
+				</div>
+
+				<!-- <div class="profile-info-row" ng-show="checkFieldVisibility(profile.gradeStudent)">
+					<div class="profile-info-name"> Grade: </div>
+
+					<div class="profile-info-value">
+						<span class="editable"><field-value-template values="profile.gradeStudent"></field-value-template></span>
+					</div>
+				</div> -->
+
+				<div class="profile-info-row" ng-show="checkFieldVisibility(profile.postalCode)">
+					<div class="profile-info-name"> Postal Code: </div>
+
+					<div class="profile-info-value">
+						<span class="editable">{{profile.postalCode}}</span>
+					</div>
+				</div>
+
+
+			</div>
+			
+		</div>
+
+
+	</div>
+
+
+</div>

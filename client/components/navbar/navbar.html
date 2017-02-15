@@ -1,0 +1,429 @@
+<header class="header headroom--not-bottom headroom--top show" id="site-header">
+    <div class="page_header_line"></div>
+
+    <div class="container mainHeader">
+        <div class="header-content-wrapper">
+
+            <div class="logo">
+                <a href="/home">
+                    <svg id="mySvg" viewBox="0 0 330 50">
+                        <!-- Symbol with text -->
+                        <symbol id="s-text">
+                            <text text-anchor="middle"
+                                x="0%"
+                                y="50%"
+                                dy=".2em"
+                                class="text--line"
+                                >
+                                Hack
+                            </text>
+                            <text class="a-text" text-anchor="middle"
+                                x="6.8%"
+                                y="50%"
+                                dy=".25em"
+                                class="text--line"
+                                >
+                                A
+                            </text>
+                            <text text-anchor="middle"
+                                x="7.85%"
+                                y="50%"
+                                dy=".2em"
+                                class="text--line"
+                                >
+                                Solution
+                            </text>             
+                        </symbol>
+
+                        <!-- Clippath  with text -->
+                        <clippath id="cp-text">
+                          <text class="reduceletterSpacing" text-anchor="start"
+                                x="0%"
+                                y="50%"
+                                dy=".2em"
+                                class="text--line"
+                                >
+                            HacK
+                          </text>
+                          <text class="a-text" text-anchor="middle"
+                                x="38.5%"
+                                y="50%"
+                                dy=".25em"
+                                class="text--line"
+                                >
+                            A
+                          </text>
+                          <text class="reduceletterSpacing"text-anchor=""
+                                x="45%"
+                                y="50%"
+                                dy=".2em"
+                                class="text--line"
+                                >
+                            Solution
+                        </clippath>
+
+                        <!-- Group with clippath for text-->
+                        <g clip-path="url(#cp-text)" class="colortext">
+                          <!-- Animated shapes inside text -->
+                          <rect
+                                width="100%"
+                                height="100%"         
+                                class="anim-shape"
+                                ></rect>
+                          <rect
+                                width="45%"
+                                height="100%"         
+                                class="anim-shape"
+                                ></rect>
+                          <rect
+                                width="32%"
+                                height="100%"         
+                                class="anim-shape"
+                                ></rect>
+                        </g>
+
+                       <!--  Transparent copy of text to keep
+                               patterned text selectable -->
+                        <use xlink:href="#s-text"
+                             class="text--transparent"></use>
+                        <line id="svg1" x1="0.9%" y1="74.6%" x2="34.5%" y2="74.6%" style="stroke:rgb(252,176,59);stroke-width:2%" class="anim-shape1" />
+                        <line id="svg2" x1="41.2%" y1="74.6%" x2="96.35%" y2="74.6%" style="stroke:rgb(252,176,59);stroke-width:2%" class="anim-shape2 " />
+                    </svg>
+                </a>
+            </div>
+
+            <nav id="primary-menu" class="primary-menu">
+
+                <a href='javascript:void(0)' id="menu-icon-trigger" class="menu-icon-trigger showhide">
+                    <span id="menu-icon-wrapper" class="menu-icon-wrapper">
+                        <i class="fa fa-bars" aria-hidden="true"></i>
+                    </span>
+                </a>
+
+                <!-- menu-icon-wrapper -->
+
+                <ul class="primary-menu-menu">
+                    <li class="menu-item-has-children">
+                        <a href="/registration" class="btn btn--default btn-sm joinBtn">Join us</a>
+                    </li>
+                    <li class="menu-item-has-children">
+                        <a href="/clientSolution" class="btn btn--default btn-sm solutionBtn">Get a solution</a>
+                    </li>
+                    <li class="menu-item-has-children">
+                        <a href="#" class="btn btn--default btn-sm loginBtn" ng-click="nav.openRightPanel()">Log In</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <div class="user-menu open-overlay">
+                <a href="#" class="user-menu-content  js-open-aside" ng-click="nav.openRightPanel()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="container subHeader">
+        <div class="header-content-wrapper">
+            <ul class="sub-menu">
+                <li class="menu-item-has-children">
+                    <a href="/why">Why?</a>
+                </li>
+                <li class="menu-item-has-children">
+                    <a href="/faq">F.A.Q</a>
+                </li>
+                <li class="menu-item-has-children">
+                    <a href="/blog">Blog</a>
+                </li>
+                <li class="menu-item-has-children">
+                    <a href="/aboutus">About Us</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+</header>
+
+<header class="header headroom--not-bottom headroom--top" id="site-subheader">
+    <div class="page_header_line"></div>
+    
+    <div class="container">
+        <div class="header-content-wrapper">
+            <ul class="sub-menu">
+                <li class="menu-item-has-children">
+                    <a href="/why">Why?</a>
+                </li>
+                <li class="menu-item-has-children">
+                    <a href="/faq">F.A.Q</a>
+                </li>
+                <li class="menu-item-has-children">
+                    <a href="/blog">Blog</a>
+                </li>
+                <li class="menu-item-has-children">
+                    <a href="/aboutus">About Us</a>
+                </li>
+            </ul>
+
+            <nav id="primary-menu" class="primary-menu">
+
+                <a href='javascript:void(0)' id="menu-icon-trigger" class="menu-icon-trigger showhide">
+                    <span class="mob-menu--title">Menu</span>
+                    <span id="menu-icon-wrapper" class="menu-icon-wrapper" style="visibility: hidden">
+                        <svg width="1000px" height="1000px">
+                            <path id="pathD" d="M 300 400 L 700 400 C 900 400 900 750 600 850 A 400 400 0 0 1 200 200 L 800 800"></path>
+                            <path id="pathE" d="M 300 500 L 700 500"></path>
+                            <path id="pathF" d="M 700 600 L 300 600 C 100 600 100 200 400 150 A 400 380 0 1 1 200 800 L 800 200"></path>
+                        </svg>
+                    </span>
+                </a>
+                <!-- menu-icon-wrapper -->
+
+                <ul class="primary-menu-menu">
+                    <li class="menu-item-has-children">
+                        <a href="/registration" class="btn btn--default btn-sm joinBtn">Join us</a>
+                    </li>
+                    <li class="menu-item-has-children">
+                        <a href="/clientSolution" class="btn btn--default btn-sm solutionBtn">Get a solution</a>
+                    </li>
+                    <!-- <li class="menu-item-has-children">
+                        <a href="#" class="btn btn--default btn-sm loginBtn" ng-click="nav.openRightPanel()">Log In</a>
+                    </li> -->
+                </ul>
+            </nav>
+        </div>
+    </div>
+</header>
+
+<div class="header-spacer"></div>
+
+<script type="text/javascript">
+(function($){
+    //--> start of menubar js==========================================
+    var settings;
+    settings = {
+        showSpeed: 300,
+        hideSpeed: 200,
+        trigger: "hover",
+        showDelay: 0,
+        hideDelay: 0,
+        effect: "fade",
+        align: "left",
+        responsive: true,
+        animation: "drop-up",
+        indentChildren: true,
+        indicatorFirstLevel: "&#xf0d7",
+        indicatorSecondLevel: "&#xf105",
+        scrollable: true,
+        scrollableMaxHeight: 460
+    };
+    var menu_container = $('.primary-menu');
+    var menu = $(".primary-menu-menu");
+    var menu_li = $(menu).find("li");
+    var showHideButton;
+    var mobileWidthBase = 768;
+    var bigScreenFlag = 2000; // a number greater than "mobileWidthBase"
+    var smallScreenFlag = 200; // a number less than "mobileWidthBase"
+ 
+        
+    // dropdown/megamenu indicators
+    $(menu).children("li").children("a").each(function(){
+        if($(this).siblings(".dropdown, .megamenu").length > 0){
+            $(this).append("<span class='indicator'>" + settings.indicatorFirstLevel + "</span>");
+        }
+    });
+    $(menu).find(".dropdown").children("li").children("a").each(function(){
+        if($(this).siblings(".dropdown").length > 0){
+            $(this).append("<span class='indicator'>" + settings.indicatorSecondLevel + "</span>");
+        }
+    });
+        
+    // navigation alignment
+    if(settings.align == "right"){ 
+        $(menu).addClass("primary-menu-right");
+    }
+    
+    // dropdown indentation (mobile mode)
+    if(settings.indentChildren){ 
+        $(menu).addClass("primary-menu-indented");
+    }
+    
+    // responsive behavior
+    if(settings.responsive){ 
+        $(menu_container).addClass("primary-menu-responsive");
+        showHideButton = $(menu_container).children(".showhide");
+    }
+
+    // scrollable menu
+    if(settings.scrollable){
+        if(settings.responsive){
+            $(menu).css("max-height", settings.scrollableMaxHeight).addClass("scrollable").append("<li class='scrollable-fix'></li>");
+        }
+    }
+        
+    // shows a dropdown
+    function showDropdown(item){
+        if(settings.effect == "fade")
+            $(item).children(".dropdown, .megamenu").stop(true, true).delay(settings.showDelay).fadeIn(settings.showSpeed).addClass(settings.animation);
+        else
+            $(item).children(".dropdown, .megamenu").stop(true, true).delay(settings.showDelay).slideDown(settings.showSpeed).addClass(settings.animation);
+    }
+    
+    // hides a dropdown
+    function hideDropdown(item){
+        if(settings.effect == "fade")
+            $(item).children(".dropdown, .megamenu").stop(true, true).delay(settings.hideDelay).fadeOut(settings.hideSpeed).removeClass(settings.animation);
+        else
+            $(item).children(".dropdown, .megamenu").stop(true, true).delay(settings.hideDelay).slideUp(settings.hideSpeed).removeClass(settings.animation);
+        $(item).children(".dropdown, .megamenu").find(".dropdown, .megamenu").stop(true, true).delay(settings.hideDelay).fadeOut(settings.hideSpeed);
+    }
+        
+    // landscape mode
+    function landscapeMode(){
+        $(menu).find(".dropdown, .megamenu").hide(0);
+        if(navigator.userAgent.match(/Mobi/i) || window.navigator.msMaxTouchPoints > 0 || settings.trigger == "click"){
+            $(".primary-menu-menu > li > a, .primary-menu ul.dropdown li a").bind("click touchstart", function(e){
+                e.stopPropagation(); 
+                e.preventDefault();
+                $(this).parent("li").siblings("li").find(".dropdown, .megamenu").stop(true, true).fadeOut(300);
+                if($(this).siblings(".dropdown, .megamenu").css("display") == "none"){
+                    showDropdown($(this).parent("li"));
+                    return false; 
+                }
+                else{
+                    hideDropdown($(this).parent("li"));
+                }
+                window.location.href = $(this).attr("href");
+            });
+            $(document).bind("click.menu touchstart.menu", function(ev){
+                if($(ev.target).closest(".primary-menu").length == 0){
+                    $(".primary-menu-menu").find(".dropdown, .megamenu").fadeOut(300);
+                }
+            });
+        }
+        else{
+            $(menu_li).bind("mouseenter", function(){
+                showDropdown(this);
+            }).bind("mouseleave", function(){
+                hideDropdown(this);
+            });
+        }
+    }
+        
+    // portrait mode
+    function portraitMode(){
+        $(menu).find(".dropdown, .megamenu").hide(0);
+        $(menu).find(".indicator").each(function(){
+            if($(this).parent("a").siblings(".dropdown, .megamenu").length > 0){
+                $(this).bind("click", function(e){
+                    $(menu).scrollTo({top: 45, left: 0}, 600);
+                    if($(this).parent().prop("tagName") == "A"){
+                        e.preventDefault();
+                    }
+                    if($(this).parent("a").siblings(".dropdown, .megamenu").css("display") == "none"){
+                        $(this).parent("a").siblings(".dropdown, .megamenu").delay(settings.showDelay).slideDown(settings.showSpeed);
+                        $(this).parent("a").parent("li").siblings("li").find(".dropdown, .megamenu").slideUp(settings.hideSpeed);
+                    }
+                    else{
+                        $(this).parent("a").siblings(".dropdown, .megamenu").slideUp(settings.hideSpeed);
+                    }
+                });
+            }
+        });
+    }
+    
+    // Fix the submenu on the right side
+    function fixSubmenuRight(){
+        var submenus = $(menu).children("li").children(".dropdown, .megamenu");
+        if($(window).innerWidth() > mobileWidthBase){
+            var menu_width = $(menu_container).outerWidth(true);
+            for(var i = 0; i < submenus.length; i++){
+                if($(submenus[i]).parent("li").position().left + $(submenus[i]).outerWidth() > menu_width){
+                    $(submenus[i]).css("right", 0);
+                }
+                else{
+                    if(menu_width == $(submenus[i]).outerWidth() || (menu_width - $(submenus[i]).outerWidth()) < 20){
+                        $(submenus[i]).css("left", 0);          
+                    }
+                    if($(submenus[i]).parent("li").position().left + $(submenus[i]).outerWidth() < menu_width){
+                        $(submenus[i]).css("right", "auto");
+                    }
+                }
+            }
+        }
+    }
+        
+    // show the bar to show/hide menu items on mobile
+    function showMobileBar(){
+        $(menu).hide(0);
+        $(showHideButton).show(0).click(function(){
+            if($(menu).css("display") == "none")
+                $(menu).slideDown(settings.showSpeed);
+            else
+                $(menu).slideUp(settings.hideSpeed).find(".dropdown, .megamenu").hide(settings.hideSpeed);
+        });
+    }
+        
+    // hide the bar to show/hide menu items on mobile
+    function hideMobileBar(){
+        $(menu).show(0);
+        $(showHideButton).hide(0);
+    }
+    
+    // unbind events
+    function unbindEvents(){
+        $(menu_container).find("li, a").unbind();
+        $(document).unbind("click.menu touchstart.menu");
+    }
+    
+    // return window's width
+    function windowWidth(){
+        return window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+    }
+    
+    // navigation start function
+    function startMenu(){
+        fixSubmenuRight();
+        if(windowWidth() <= mobileWidthBase && bigScreenFlag > mobileWidthBase){
+            unbindEvents();
+            if(settings.responsive){
+                showMobileBar();
+                portraitMode();
+            }
+            else{
+                landscapeMode();
+            }
+        }
+        if(windowWidth() > mobileWidthBase && smallScreenFlag <= mobileWidthBase){
+            unbindEvents();
+            hideMobileBar();
+            landscapeMode();
+        }
+        bigScreenFlag = windowWidth();
+        smallScreenFlag = windowWidth();
+        /* IE8 fix */
+        if(/MSIE (\d+\.\d+);/.test(navigator.userAgent) && windowWidth() < mobileWidthBase){
+            var ieversion = new Number(RegExp.$1);
+            if(ieversion == 8){
+                $(showHideButton).hide(0);
+                $(menu).show(0);
+                unbindEvents();
+                landscapeMode();
+            }
+        }
+    }       
+    
+    startMenu();
+    $(window).resize(function(){
+        startMenu();
+        fixSubmenuRight();
+    });
+
+    //<-- end of menubar js==========================================
+        
+}(jQuery));
+
+</script>

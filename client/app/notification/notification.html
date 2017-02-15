@@ -1,0 +1,66 @@
+<div class="container">
+<!-- 	hjkh -->
+	<h1 class="sectionHeader">Notifications</h1>
+		
+	<hr></hr>
+	<!-- for teachers -->
+	<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 notificationBox" ng-repeat="notification in nav.notifications | orderBy: '-created'">
+		<div class="col-lg-1 col-md-1 col-sm-1 col-xs-1 text-center noPadding width_75px">
+			<img class="navRoundPic" ng-src="{{notification.sender.profilePicturePath ? notification.sender.profilePicturePath : '../assets/images/default.png'}}">
+		</div>
+		<div class="col-lg-9 col-md-9 col-sm-9 col-xs-9 noPadding notificationDetail" ng-click="nav.gotoDetails(notification)">
+			<span ng-show="notification.notificationType==='requestToTutorForBooking'">
+				You have just got a request from <span class="highlightTextInBlue">{{notification.sender.firstName}} {{notification.sender.lastName}}</span>
+			</span>
+			<span ng-show="notification.notificationType==='editBooking'">
+				You have just got a response for your request to <span class="highlightTextInBlue">{{notification.sender.firstName}} {{notification.sender.lastName}}.</span>Booking info updated.
+			</span>
+			<span ng-show="notification.notificationType==='paymentReminderOnBookingEdit'">
+				You have just got a response for your request to <span class="highlightTextInBlue">{{notification.sender.firstName}} {{notification.sender.lastName}}.</span> Booking info updated. Please add your payment information.
+			</span>
+			<span ng-show="notification.notificationType==='rejectBooking'">
+				<span class="highlightTextInBlue">{{notification.sender.firstName}} {{notification.sender.lastName}}</span> rejected your request.
+			</span>
+			<span ng-show="notification.notificationType==='acceptBooking'">
+				<span class="highlightTextInBlue">{{notification.sender.firstName}} {{notification.sender.lastName}}</span> accepted your booking request.
+			</span>
+			<span ng-show="notification.notificationType==='acceptEditBooking'">
+				<span class="highlightTextInBlue">{{notification.sender.firstName}} {{notification.sender.lastName}}</span> accepted your update request.
+			</span>
+			<span ng-show="notification.notificationType==='paymentReminderOnBookingAccept'">
+				<span class="highlightTextInBlue">{{notification.receiver.firstName}} {{notification.receiver.lastName}}</span> accepted your booking request. Please add your payment information.
+			</span>
+			<span ng-show="notification.notificationType==='paymentReminderOnNearTime'">
+				Please add your payment information. 
+			</span>
+			<span ng-show="notification.notificationType==='bookingCanceled'">
+				Booking has been cancelled. 
+			</span>
+
+		</div>
+		<div class="clearfix visible-xs"></div>
+		<div class="col-lg-2 col-md-2 col-sm-2 col-xs-12 notificationTime">
+            <span class="pull-right">
+                <i class="glyphicon glyphicon-time"></i>
+                <span>{{notification.created | date:"MM/dd/yyyy h:mma"}}</span>
+            </span>
+        </div>
+		<!-- <i class="fa fa-clock-o"></i> <small class="text-muted">09 Sep 2016 11.30 AM</small> -->
+	</div>
+	<!-- for students -->
+	<!-- <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 notificationBox">
+		<div class="col-lg-1 col-md-1 col-sm-1 col-xs-1 text-center noPadding width_75px">
+			[user profile image]
+		</div>
+		<div class="col-lg-9 col-md-9 col-sm-9 col-xs-9 noPadding notificationDetail">
+			[username] has accepted your request.
+		</div>
+		<div class="clearfix visible-xs"></div>
+		<div class="col-lg-2 col-md-2 col-sm-2 col-xs-6 notificationTime">
+			<span class="pull-right">
+	            <i class="glyphicon glyphicon-time"></i>
+	            <span>09 Sep 2016 11.30 AM</span>
+	        </span>
+        </div>
+	</div> -->
+</div>

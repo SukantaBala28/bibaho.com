@@ -1,0 +1,540 @@
+/*form styles*/
+.bg-grey {
+  background: #f8f8f8;
+}
+
+.form-holder {
+  /*min-height: 800px;*/
+  padding: 10px 0px;
+  overflow: hidden;
+}
+
+/*@media (max-width: 768px){
+  .form-holder {
+    margin-top: 75px;
+  }
+}*/
+
+.upperLayer {
+  position: absolute;
+  background: #f8f8f8;
+  opacity: .7;
+  width: 100%;
+  height: 100%;
+  top: 0;
+}
+
+#welcomeForm {
+  text-align: center;
+  display : flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  min-height: 600px;
+  @media screen and (max-width: 767px){
+    width: 100% !important;
+    justify-content: center !important;
+  }
+
+  .welcomeFormContainer {
+    background: white;
+    border: 0 none;
+    border-radius: 3px;
+    box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.4);
+    padding: 20px 30px;
+    width: 400px;
+
+    @media screen and (min-width: 300px) and (max-width: 400px){
+      width: auto !important;
+      padding: 20px 15px !important;
+    }
+
+    .btnLinkedIn {
+      background: #0077b5;
+      padding: 20px 40px;
+      margin-bottom: 10px; }
+
+    .btn + .btn {
+      margin-left: 0px; }
+
+    .btnGmail {
+      background: #dd4b39;
+      padding: 20px 50px;
+      margin-bottom: 10px; }
+
+    .btnEmail {
+      background-color: #5cb85c;
+      border-color: #4cae4c;
+      padding: 20px 50px;
+    }
+
+    .btn {
+      i.fa-linkedin {
+        margin-right: 10px;
+        font-size: 20px;
+      }
+      i.fa-google {
+        margin-right: 10px;
+        font-size: 20px;
+      }
+      i.fa-envelope-o {
+        margin-right: 10px;
+        font-size: 20px;
+      }
+    }
+    .btn:focus, .btn:active:focus, .btn.active:focus {
+      outline: none;
+    }
+
+    input,
+    textarea,
+    select {
+      padding: 15px;
+      border: 1px solid #ccc;
+      border-radius: 3px;
+      margin-bottom: 10px;
+      width: 100%;
+      box-sizing: border-box;
+      font-family: montserrat;
+      color: #2C3E50;
+      font-size: 13px;
+    }
+    .action-button {
+      width: 100%;
+      background: #27AE60;
+      color: white;
+      border: 0 none;
+      border-radius: 50px;
+      cursor: pointer;
+      padding: 10px 0px;
+      margin: 10px 0px;
+      font-size: 16px;
+      font-family: "Varela Round", Arial, "Helvetica Neue", Helvetica, sans-serif;
+    }
+    .action-button:hover,
+    .action-button:focus {
+      box-shadow: 0 0 0 2px white, 0 0 0 3px #27AE60;
+    }
+  }
+}
+
+#msform {
+  position: relative;
+  max-width: 400px;
+  margin: 0px auto;
+  /*min-height: 685px;*/
+}
+
+#msform fieldset {
+  background: white;
+  border: 0 none;
+  border-radius: 3px;
+  box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.4);
+  padding: 20px 30px;
+  margin: 30px 0px;
+  box-sizing: border-box;
+  /*stacking fieldsets above each other
+  margin: 0px 10%;*/
+  position: relative;
+    @media screen and (max-width: 400px) {
+      margin: 0 5px;
+      padding: 20px 10px;
+    }
+}
+
+#msform fieldset .btn + .btn {
+  margin-left: 0px;
+}
+
+#msform fieldset .btnLinkedIn {
+  background: #0077b5;
+  padding: 20px 40px;
+  margin-bottom: 10px;
+}
+
+#msform fieldset .btnGmail {
+  background: #dd4b39;
+  padding: 20px 50px;
+  margin-bottom: 10px;
+}
+
+#msform fieldset .btnEmail {
+  background: #99c432;
+  padding: 20px 50px;
+  margin-bottom: 10px;
+}
+
+#msform fieldset input.has-error{
+  border: 1px solid #f15b26 !important;
+}
+#msform fieldset textarea.has-error{
+  border: 1px solid #f15b26 !important;
+}
+#msform fieldset select.has-error{
+  border: 1px solid #f15b26 !important;
+}
+
+.formOrDivider {
+  margin: 10px 0;
+  font-family: Georgia,Times New Roman,serif;
+  font-style: italic;
+  opacity: .5;
+  font-weight: 300;
+  color: #9fa3a9;
+}
+
+.form__footnote {
+  margin-top: 10px;
+  font-size: 12px;
+  color: #9fa3a9;
+}
+
+.form__note {
+  margin-top: -10px;
+  font-size: 10px;
+  color: #9fa3a9;
+  text-align: left;
+}
+
+/*Hide all except first fieldset*/
+#msform fieldset:not(:first-of-type) {
+  display: none;
+}
+
+/*inputs*/
+#msform input,
+#msform textarea,
+#msform select {
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  margin-bottom: 10px;
+  width: 100%;
+  box-sizing: border-box;
+  font-family: montserrat;
+  color: #2C3E50;
+  font-size: 13px;
+}
+
+/*buttons*/
+#msform .action-button {
+  width: 100%;
+  background: #27AE60;
+  /*font-weight: bold;*/
+  color: white;
+  border: 0 none;
+  border-radius: 50px;
+  cursor: pointer;
+  padding: 10px 0px;
+  margin: 10px 0px;
+  font-size: 16px;
+  font-family: "Varela Round", Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+#msform .action-button:hover,
+#msform .action-button:focus {
+  box-shadow: 0 0 0 2px white, 0 0 0 3px #27AE60;
+}
+
+#msform {
+  .previous-button {
+    width: 49%;
+    background: #f15b26;
+    &:hover, &:focus {
+      box-shadow: 0 0 0 2px white, 0 0 0 3px #f15b26;
+    }
+  }
+  .next-button {
+    width: 49%;
+  }
+}
+
+
+/*headings*/
+.fs-title {
+  font-size: 15px;
+  text-transform: uppercase;
+  color: #2C3E50;
+  margin-bottom: 10px;
+  text-align: center;
+}
+.fs-subtitle {
+  font-weight: normal;
+  font-size: 13px;
+  color: #666;
+  margin-bottom: 20px;
+  text-align: center;
+}
+/*progressbar*/
+#progressbar {
+  margin: 30px 0px;
+  overflow: hidden;
+  /*CSS counters to number the steps*/
+  counter-reset: step;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+#progressbar li {
+  list-style-type: none;
+  color: black;
+  text-transform: uppercase;
+  font-size: 9px;
+  width: 15%;
+  /*float: left;
+  position: relative;*/
+}
+#progressbar li:before {
+  content: counter(step);
+  counter-increment: step;
+  width: 20px;
+  line-height: 20px;
+  display: block;
+  font-size: 10px;
+  color: #333;
+  background: white;
+  border-radius: 3px;
+  margin: 0 auto 5px auto;
+}
+/*progressbar connectors*/
+#progressbar li:after {
+  content: '';
+  width: 100%;
+  height: 2px;
+  background: white;
+  position: absolute;
+  left: 0;
+  top: 9px;
+  z-index: -1; /*put it behind the numbers*/
+}
+#progressbar li:first-child:after {
+  /*connector not needed before the first step*/
+  content: none; 
+}
+/*marking active/completed steps green*/
+/*The number of the step and the connector before it = green*/
+#progressbar li.active:before,  #progressbar li.active:after{
+  background: #27AE60;
+  color: white;
+}
+
+.availableSelect {
+  text-align: left;
+  input {
+    width: auto !important;
+  }
+  label {
+    font-size: 12px !important;
+    color: #333 !important;
+  }
+
+  input[type=radio] {
+    vertical-align: middle;
+    position: relative;
+    bottom: -4px;
+  }
+}
+
+.availibilityBox {
+  margin-bottom: 10px;
+  .avialableBox{
+    border: 1px solid #ddd;
+    height: 50px;
+    width: 33%;
+    margin-left: 0px;
+    background: #f5f5f5;
+    box-shadow: 3px 3px 4px #888888;
+    text-align: center;
+    display: table;
+  }
+
+  .avialableBox-editable{
+    border: 1px solid #ddd;
+    height: 50px;
+    width: 33%;
+    margin-left: 0px;
+    background: #f5f5f5;
+    box-shadow: 3px 3px 4px #888888;
+    text-align: center;
+    cursor: pointer;
+    display: table;
+  }
+
+  .weekCellHead{
+    width: 90px;
+    text-align: center;
+  }
+
+  .mobileWeekDays {
+    height: 60px;
+    line-height: 60px;
+  }
+
+  .avialableBox-editable:hover:not(.availableBox-active) .scheduleText {
+    opacity: 1;
+  }
+  .availableBox-active {
+    color: white;
+    background: #428bca;
+    border: 1px solid #428bca;
+    display: table;
+  }
+  .availableBox-active .scheduleText {
+    color: white;
+    opacity: 1;
+  }
+  .scheduleText {
+    opacity: 0;
+    color: #5aa6c6;
+    font-size: 12px;
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+  }
+
+  .space-20 {
+    max-height: 1px;
+    min-height: 1px;
+    overflow: hidden;
+    margin: 12px 0;
+    margin: 20px 0 19px;
+  }
+  [class*="vspace-20"] {
+    max-height: 1px;
+    min-height: 1px;
+    overflow: hidden;
+    margin: 12px 0;
+    margin: 20px 0 19px 0;
+  }
+
+  .marginTop20 {
+    margin-top: 20px;
+  }
+
+  .marginTop10 {
+    margin-top: 10px;
+  }
+}
+
+.quesLabel {
+  text-align: left;
+  font-size: 12px;
+  color: #333;
+}
+
+span.acknowledgementText {
+  font-size: 12px !important;
+  input {
+    width: auto !important;
+  }
+
+  input[type=checkbox] {
+    vertical-align: middle;
+    position: relative;
+    bottom: -3px;
+  }
+}
+
+/*-- sticky-note --*/
+@import url(https://fonts.googleapis.com/css?family=Covered+By+Your+Grace);
+
+.stickyNotesLeft {
+  font-family: 'Covered By Your Grace', cursive;
+  position: absolute;
+  top: 20%;
+  left: 15%;
+  text-decoration: none;
+  color: #000;
+  background: #f15b26;
+  display: block;
+  height: 200px;
+  width: 200px;
+  padding: 15px;
+  -moz-box-shadow:5px 5px 7px rgba(33,33,33,1);
+  -webkit-box-shadow: 5px 5px 7px rgba(33,33,33,.7);
+  box-shadow: 5px 5px 7px rgba(33,33,33,.7);
+  -moz-transition:-moz-transform .15s linear;
+  -o-transition:-o-transform .15s linear;
+  -webkit-transition:-webkit-transform .15s linear;
+  -webkit-transform:rotate(6deg);
+  -o-transform:rotate(6deg);
+  -moz-transform:rotate(6deg);
+  &:hover, &:focus {
+    -moz-box-shadow:10px 10px 7px rgba(0,0,0,.7);
+    -webkit-box-shadow: 10px 10px 7px rgba(0,0,0,.7);
+    box-shadow:10px 10px 7px rgba(0,0,0,.7);
+    -webkit-transform: scale(1.25);
+    -moz-transform: scale(1.25);
+    -o-transform: scale(1.25);
+    color:#000;
+  }
+  @media screen and (min-width: 991px) and (max-width: 1199px) {
+    left: 5%;
+  }
+}
+
+.stickyNotesRight {
+  font-family: 'Covered By Your Grace', cursive;
+  position: absolute;
+  top: 20%;
+  right: 15%;
+  text-decoration: none;
+  color: #000;
+  background: #3cb878;
+  display: block;
+  height: 200px;
+  width: 200px;
+  padding: 15px;
+  -moz-box-shadow:5px 5px 7px rgba(33,33,33,1);
+  -webkit-box-shadow: 5px 5px 7px rgba(33,33,33,.7);
+  box-shadow: 5px 5px 7px rgba(33,33,33,.7);
+  -moz-transition:-moz-transform .15s linear;
+  -o-transition:-o-transform .15s linear;
+  -webkit-transition:-webkit-transform .15s linear;
+  -webkit-transform:rotate(-6deg);
+  -o-transform:rotate(-6deg);
+  -moz-transform:rotate(-6deg);
+  &:hover, &:focus {
+    -moz-box-shadow:10px 10px 7px rgba(0,0,0,.7);
+    -webkit-box-shadow: 10px 10px 7px rgba(0,0,0,.7);
+    box-shadow:10px 10px 7px rgba(0,0,0,.7);
+    -webkit-transform: scale(1.25);
+    -moz-transform: scale(1.25);
+    -o-transform: scale(1.25);
+    color:#000;
+  }
+  @media screen and (min-width: 991px) and (max-width: 1199px) {
+    right: 5%;
+  }
+}
+
+.extra-padding {
+  padding: 50px 0px;
+}
+
+.text-error {
+  position: relative;
+  top: -15px;
+  color: #a94442;
+  font-size: 10px;
+}
+
+.boxDisable {
+  opacity: 0.4;
+  pointer-events: none;
+}
+
+.boxActive {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.callUs {
+  a {
+    color: #acacac;
+    &:hover, &:focus {
+      color: #2a6496;
+    }
+  }
+}

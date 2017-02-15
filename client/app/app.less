@@ -1,0 +1,153 @@
+@import '../bower_components/bootstrap/less/bootstrap.less';
+@import '../bower_components/bootstrap-social/bootstrap-social.less';
+@import '../bower_components/font-awesome/less/font-awesome.less';
+
+@icon-font-path: '../bower_components/bootstrap/fonts/';
+@fa-font-path: '../bower_components/font-awesome/fonts';
+
+@import (less) "../css/crumina-fonts.css";
+@import (less) "../css/fonts.css";
+@import (less) "../css/formStyle.css";
+@import (less) "../css/grid.css";
+@import (less) "../css/jquery.mCustomScrollbar.min.css";
+@import (less) "../css/magnific-popup.css";
+@import (less) "../css/normalize.css";
+@import (less) "../css/photo-gallery.css";
+@import (less) "../css/primary-menu.css";
+@import (less) "../css/styles.css";
+@import (less) "../css/swiper.min.css";
+
+/**
+ * App-wide Styles
+ */
+
+.browserupgrade {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+.marginBottom30{
+  margin-bottom: 30px;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+/* inject:less */
+@import 'account/forgotPassword/forgotPassword';
+@import 'account/profile/userProfile';
+@import 'account/registration/registration';
+@import 'account/settings/settings';
+@import 'account/signup/signup';
+@import 'admin/admin';
+@import 'linkedPages/faq/faq';
+@import 'linkedPages/why/why';
+@import 'main/main';
+@import 'notification/notification';
+@import 'pricing/pricing';
+@import '../components/footer/footer';
+@import '../components/modal/modal';
+@import '../components/navbar/navbar';
+@import '../components/oauth-buttons/oauth-buttons';
+@import '../components/signinBar/signinBar';
+/* endinject */
+
+
+* {
+  padding:0;
+  margin:0;
+}
+
+/**This block for only gift purpose*/
+
+#bizzbar{
+	background: #4393B9;
+	width: 100%;
+	text-align: center;
+	color: #fff;
+	padding: 0px;
+	overflow: hidden;
+	height: 30px;
+	z-index: 1001;
+	font-family: Georgia;
+	font-size: 14px;
+	line-height: 30px;
+	position: fixed;
+	top: 0;
+	left: 0;
+	border-bottom: 3px solid rgb(255,255,255);
+	box-shadow: 0 1px 5px rgba(0,0,0,.7);
+
+	a:hover {
+		color: #fff;
+	}
+
+	a:focus {
+		color: #fff;
+	}
+}
+#bizzbar a {
+	color: #fff !important;
+}
+
+/*This block for only gift purpose*/
+
+/*@media screen and (max-width: 585px) {
+	#bizzbar {
+		line-height: 16px;
+		height: 40px;
+	}
+}*/
+
+// We use these as default colors throughout (hackasolution)
+
+@primary-color: #4cc2c0 !default;
+@secondary-color: #f15b26 !default;
+@heading-color: #2f2c2c !default;
+@global-link-color: #2f2c2c !default;
+@font-color: #acacac !default;
+
+
+@white-color: #fff !default;
+@border-color: #f7f9f9 !default;
+@main-border-color: #ced3d3 !default;
+
+
+
+
+// Socials color
+
+@social-bg: #333 !default;
+@faceb-color: #3b5998 !default;
+@youtube-color: #e82018 !default;
+
+
+@h1-fontsize: 48px !default;
+@h2-fontsize: 42px !default;
+@h3-fontsize: 36px !default;
+@h4-fontsize: 30px !default;
+@h5-fontsize: 24px !default;
+@h6-fontsize: 18px !default;
+@h-font-weight: 400 !default;
+
+@heading-font-family: 'Varela Round', Arial, 'Helvetica Neue', Helvetica, sans-serif !default;
+@p-font-size: 18px !default;
+
+// We use these as default colors throughout (hackasolution)
+
+// We use these to control various global styles (hackasolution)
+
+@body-bg: #fff !default;
+@body-font-size: 16px !default;
+@body-font-color: #acacac !default;
+@body-dark-font-color: #2f2c2c !default;
+@body-font-family: 'Varela Round', Arial, 'Helvetica Neue', Helvetica, serif !default;
+@body-font-weight: 400 !default;
+@base-line-height: 1.5 !default;
+
+@semibold-weight: 600 !default;
+
+@border-round: 100% !default;
+// We use these to control various global styles (hackasolution)

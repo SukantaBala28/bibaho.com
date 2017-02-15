@@ -1,0 +1,73 @@
+<div class="mCustomScrollbar" data-mcs-theme="dark">
+
+    <div class="popup right-menu">
+
+        <div class="right-menu-wrap">
+
+            <div class="user-menu-close" ng-click="side.closeRightPanel()">
+                <a href="#" class="user-menu-content  js-close-aside">
+                    <span></span>
+                    <span></span>
+                </a>
+            </div>
+
+            <div class="logo">
+                <div class="logo-text">
+                    <div class="logo-title">Seosight</div>
+                </div>
+            </div>
+
+            <p class="text">Investigationes demonstraverunt lectores legere me lius quod
+                ii legunt saepius est etiam processus dynamicus.
+            </p>
+
+        </div>
+
+        <div class="widget login">
+
+            <form name="form" novalidate>
+                <h4 class="login-title">Sign In to Your Account</h4>
+                <input class="email input-standard-grey" name="email" ng-model="side.user.email" placeholder="Username or Email" type="email" required>
+                <input class="password input-standard-grey" name="password" ng-model="side.user.password" placeholder="Password" type="password" required>
+                <div class="login-btn-wrap">
+
+                    <div class="btn btn--default btn-medium btn--dark btn-hover-shadow" ng-click="side.login(form)">
+                        <span class="text">login now</span>
+                        <span class="semicircle"></span>
+                    </div>
+
+                    <div class="remember-wrap">
+
+                        <div class="checkbox">
+                            <input id="remember" type="checkbox" name="remember" value="remember">
+                            <label for="remember">Remember Me</label>
+                        </div>
+
+                    </div>
+
+                </div>
+            </form>
+    
+            <div class="helped"><a href="/forgotPassword">Lost your password?</a></div>
+            <div class="helped"><a href="" ng-click="side.gotoRegistrationPage()">Join Now</a></div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<script type="text/javascript">
+   $asidePanel = $('.right-menu');
+
+    //console.log(asidePanel);
+    if ($asidePanel.length) {
+        console.log($asidePanel);
+        //console.log(asidePanel.length);
+        $asidePanel.mCustomScrollbar({
+            axis: "y",
+            scrollEasing: "linear",
+            scrollInertia: 150
+        });
+    }
+</script>
