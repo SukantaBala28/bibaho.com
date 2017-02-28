@@ -62,27 +62,19 @@ class NavbarController {
 					// _this.$timeout(function(){
 					// 	_this.socket.emitEvent('newUser', {userId: __this.currentUser._id});
 					// },9000)
-					
-					
 				});
 
 		   		$http.get('/api/users/getNotifications').
 			    then(function(data){
-
 			    	_this.notifications = data.data.notifications;
 			    	_this.unseenNotifications = data.data.unseenNotifications;
 			    	_this.socket.syncUpdates('notification', _this.notifications);
 			    	_this.socket.syncUpdates('notification', _this.unseenNotifications);
 			    	// _this.notifications = data;
 			    	//console.log(_this.notifications);
-			       
 			    });
-		   }
+		   	}
 		});
-
-		
-		
-
   	}
 
   	clearUnseenNotifications(){
@@ -98,6 +90,13 @@ class NavbarController {
   		
   	}
 
+  	CreateAccountModal(){
+  		$('#createAccountModal').modal("show");
+  	}
+
+    LogInModal(){
+  		$('#logInModal').modal("show");
+  	}
   	openRightPanel(){
   		//alert('ok');
   		var asidePanel = $('.right-menu');

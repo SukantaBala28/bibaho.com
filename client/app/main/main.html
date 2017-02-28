@@ -1,7 +1,7 @@
 <!-- <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css"> -->
 <div class="content-wrapper">
     <!-- Main Slider -->
-    <div id="containerbg" class="container">
+    <div id="containerbg">
         <div class="row">
             <div class="col-lg-10 col-md-10 col-sm-10 col-xs-12 text-center search-box">
                 <div class="row">
@@ -10,39 +10,50 @@
                     </div>  
                 </div>
                 <div class="row searchBoxStyle">
-                    <form name="searchForm">
-                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 text-center searchInput">
-                            <input type="text" class="form-control" id="searchKeyword" placeholder="Type your keyword"> 
+                    <div class="col-lg-11 col-md-11 col-sm-11 col-xs-11">
+                        <div class="row">
+                            <form name="searchForm">
+                                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 text-center searchInput">
+                                    <input type="text" class="form-control" id="searchKeyword" placeholder="Type your keyword"> 
+                                </div>
+                                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 text-center searchSelect">
+                                    <select name="religion-type" class="form-control">
+                                        <option value="volvo">Select Gender</option>
+                                        <option value="volvo">Male</option>
+                                        <option value="saab">Female</option>
+                                    </select> 
+                                </div>
+                                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 text-center searchSelect ">
+                                    <select name="religion-type" class="form-control">
+                                        <option value="volvo">Select Religion</option>
+                                        <option value="volvo">Buddhist</option>
+                                        <option value="saab">Chirschian</option>
+                                        <option value="fiat">Hindu</option>
+                                        <option value="audi">Muslims</option>
+                                        <option value="audi">Other</option>
+                                    </select> 
+                                </div>
+                                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 text-center searchLocation">
+                                    <select name="location-type" class="form-control">
+                                        <option value="volvo">Select Place</option>
+                                        <option value="volvo">Dhaka</option>
+                                        <option value="saab">Khulna</option>
+                                        <option value="fiat">Rajshahi</option>
+                                        <option value="audi">Barisal</option>
+                                        <option value="audi">Chittagong</option>
+                                        <option value="audi">Mymenshing</option>
+                                        <option value="audi">Syllhet</option>
+                                        <option value="audi">Rangpur</option>
+                                        <option value="audi">International</option>
+                                        <option value="audi">Other</option>
+                                    </select> 
+                                </div>
+                            </form>   
                         </div>
-                        <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 text-center searchSelect">
-                            <select name="religion-type" class="form-control">
-                                <option value="volvo">Select Religion</option>
-                                <option value="volvo">Buddhist</option>
-                                <option value="saab">Chirschian</option>
-                                <option value="fiat">Hindu</option>
-                                <option value="audi">Muslims</option>
-                                <option value="audi">Other</option>
-                            </select> 
-                        </div>
-                        <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 text-center searchLocation">
-                            <select name="location-type" class="form-control">
-                                <option value="volvo">Select Place</option>
-                                <option value="volvo">Dhaka</option>
-                                <option value="saab">Khulna</option>
-                                <option value="fiat">Rajshahi</option>
-                                <option value="audi">Barisal</option>
-                                <option value="audi">Chittagong</option>
-                                <option value="audi">Mymenshing</option>
-                                <option value="audi">Syllhet</option>
-                                <option value="audi">Rangpur</option>
-                                <option value="audi">International</option>
-                                <option value="audi">Other</option>
-                            </select> 
-                        </div>
-                        <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 text-center searchButton">
-                            <button class="btn btn-success" type="submit">Search</button>   
-                        </div>  
-                    </form>
+                    </div>
+                    <div class="col-lg-l col-md-1 col-sm-1 col-xs-1">
+                        <button class="btn btn-success pull-right" type="submit">Search</button>    
+                    </div>
                 </div>
             </div>   
         </div>
@@ -50,18 +61,18 @@
     <!-- </div> -->
     <!-- ... End Main Slider -->
     <div class="container catergoryBox">
-        <h2 class="text-center"><br/>Search People By Popular Category</h2><br/>
+        <h4 class="text-center"><br/>Browse People By Popular Category</h4><br/><br/>
         <div class="row">
-            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 text-center">
+            <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 text-center">
                 <div class="row">
-                    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 ">
-                       <span><i class="fa fa-birthday-cake region-icon" aria-hidden="true"></i></span> 
+                    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3" >
+                       <img src="../assets/images/info-box1.png" alt="image"> 
                     </div>
-                    <div class="col-lg-9 col-md-9 col-sm-9 col-xs-9" style="text-align: left;">
-                        <h3>Religion</h3><br/>
+                    <div class="col-lg-9 col-md-9 col-sm-9 col-xs-9" style="text-align: left;" >
+                        <h5>Religion</h5><br/>
                         <div class="row">
                             <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2" style="text-align: right;">
-                                <i class="fa fa-hand-o-right" aria-hidden="true"></i>   
+                                <i class="fa fa-hand-o-right" aria-hidden="true"></i>  
                             </div>
                             <div class="col-lg-10 col-md-10 col-sm-10 col-xs-10" style="text-align: left;">
                                 <h6>Buddhist(0)</h6>   
@@ -106,13 +117,13 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 text-center">
+            <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 text-center">
                 <div class="row">
                     <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
-                        <span><i class="fa fa-university region-icon" aria-hidden="true"></i></span>   
+                        <img src="../assets/images/info-box1.png" alt="image">   
                     </div>
                     <div class="col-lg-9 col-md-9 col-sm-9 col-xs-9" style="text-align: left;">
-                         <h3>Profession</h3> <br/>
+                         <h5>Profession</h5> <br/>
                          <div class="row">
                             <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2" style="text-align: right;">
                                 <i class="fa fa-hand-o-right" aria-hidden="true"></i>   
@@ -160,13 +171,13 @@
                     </div>
                 </div>
             </div> 
-            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 text-center">
+            <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 text-center">
                 <div class="row">
                     <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
-                        <span><i class="fa fa-compass region-icon" aria-hidden="true"></i></span>   
+                        <img src="../assets/images/info-box1.png" alt="image">   
                     </div>
                     <div class="col-lg-9 col-md-9 col-sm-9 col-xs-9" style="text-align: left;">
-                         <h3>Region</h3><br/>
+                         <h5>Region</h5><br/>
                          <div class="row">
                             <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2" style="text-align: right;">
                                 <i class="fa fa-hand-o-right" aria-hidden="true"></i>   
@@ -213,533 +224,411 @@
                         </div>    
                     </div>
                 </div>
-                
-            </div>   
+            </div>
+
+            <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 text-center">
+                <div class="row">
+                    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+                        <img src="../assets/images/info-box1.png" alt="image">   
+                    </div>
+                    <div class="col-lg-9 col-md-9 col-sm-9 col-xs-9" style="text-align: left;">
+                         <h5>Region</h5><br/>
+                         <div class="row">
+                            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2" style="text-align: right;">
+                                <i class="fa fa-hand-o-right" aria-hidden="true"></i>   
+                            </div>
+                            <div class="col-lg-10 col-md-10 col-sm-10 col-xs-10" style="text-align: left;">
+                                <h6>Buddhist(0)</h6>   
+                            </div>   
+                        </div>
+
+                        <div class="row">
+                            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2" style="text-align: right;">
+                                <i class="fa fa-hand-o-right" aria-hidden="true"></i>   
+                            </div>
+                            <div class="col-lg-10 col-md-10 col-sm-10 col-xs-10" style="text-align: left;">
+                                <h6>Christian(0)</h6>   
+                            </div>   
+                        </div>
+
+                        <div class="row">
+                            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2" style="text-align: right;">
+                                <i class="fa fa-hand-o-right" aria-hidden="true"></i>   
+                            </div>
+                            <div class="col-lg-10 col-md-10 col-sm-10 col-xs-10" style="text-align: left;">
+                                <h6>Hindu(0)</h6>   
+                            </div>   
+                        </div>
+
+                        <div class="row">
+                            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2" style="text-align: right;">
+                                <i class="fa fa-hand-o-right" aria-hidden="true"></i>   
+                            </div>
+                            <div class="col-lg-10 col-md-10 col-sm-10 col-xs-10" style="text-align: left;">
+                                <h6>Muslims(0)</h6>   
+                            </div>   
+                        </div>
+
+                        <div class="row">
+                            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2" style="text-align: right;">
+                                <i class="fa fa-hand-o-right" aria-hidden="true"></i>   
+                            </div>
+                            <div class="col-lg-10 col-md-10 col-sm-10 col-xs-10" style="text-align: left;">
+                                <h6>Other(0)</h6>   
+                            </div>   
+                        </div>    
+                    </div>
+                </div>
+            </div>      
         </div> 
     </div>
-    <!-- Info-Box -->
-    <div class="container info-boxes pt100 pb100">
-        <div class="row" iln-match-height>
-            <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 info-box">
-                <div class="info-box--standard" data-mh="info-boxes">
-                    <div class="info-box-image">
-                        <img src="../assets/images/info-box1.png" alt="image">
-                    </div>
-                    <div class="info-box-content">
-                        <h5 class="info-box-title">Web Development/Mobile App Development</h5>
-                        <p class="text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
-                            sed diam nonummy nibh euismod.
-                        </p>
+
+    <!-- See Profile Box -->
+    <div class="container">
+        <br/>
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center">
+                <h4>Choose Your Right Life Partner</h4>   
+            </div>
+        </div>
+        <br/> 
+        <div class="row">
+            <div class="col-lg-2 col-md-2 col-sm-4 col-xs-6 my-div">
+                <div class="row">
+                    <div class="col-1g-12 col-md-12 col-sm-12 col-xs-12 text-center" >
+                        <img src="../assets/images/bibahoimage/1.png" class="img-circle img-div-style" width="110px" height="110px" alt="image">     
                     </div>
                 </div>
+
+                <div class="row">
+                    <div class="col-1g-12 col-md-12 col-sm-12 col-xs-12 text-center">
+                        <h6>Shila Sarker,<br/>Gopalganj</h6>
+                        <p>See more</p><br/>    
+                    </div>
+                </div>    
             </div>
 
-            <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 info-box">
-                <div class="info-box--standard" data-mh="info-boxes">
-                    <div class="info-box-image">
-                        <img src="../assets/images/info-box2.png" alt="image">
-                    </div>
-                    <div class="info-box-content">
-                        <h5 class="info-box-title">Embedded Systems/IOT Development</h5>
-                        <p class="text">Claritas est etiam processus dynamicus,
-                            qui sequitur mutationem consuetudium lectorum.
-                        </p>
+            <div class="col-lg-2 col-md-2 col-sm-4 col-xs-6 my-div">
+                <div class="row">
+                    <div class="col-1g-12 col-md-12 col-sm-12 col-xs-12 text-center" >
+                        <img src="../assets/images/bibahoimage/1.png" class="img-circle img-div-style" width="110px" height="110px" alt="image">     
                     </div>
                 </div>
+
+                <div class="row">
+                    <div class="col-1g-12 col-md-12 col-sm-12 col-xs-12 text-center">
+                        <h6>Shila Sarker,<br/>Gopalganj</h6>
+                        <p>See more</p><br/>    
+                    </div>
+                </div>    
+            </div>
+            <div class="col-lg-2 col-md-2 col-sm-4 col-xs-6 my-div">
+                <div class="row">
+                    <div class="col-1g-12 col-md-12 col-sm-12 col-xs-12 text-center" >
+                        <img src="../assets/images/bibahoimage/1.png" class="img-circle img-div-style" width="110px" height="110px" alt="image">     
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-1g-12 col-md-12 col-sm-12 col-xs-12 text-center">
+                        <h6>Shila Sarker,<br/>Gopalganj</h6>
+                        <p>See more</p><br/>    
+                    </div>
+                </div>    
+            </div>
+            <div class="col-lg-2 col-md-2 col-sm-4 col-xs-6 my-div">
+                <div class="row">
+                    <div class="col-1g-12 col-md-12 col-sm-12 col-xs-12 text-center" >
+                        <img src="../assets/images/bibahoimage/1.png" class="img-circle img-div-style" width="110px" height="110px" alt="image">     
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-1g-12 col-md-12 col-sm-12 col-xs-12 text-center">
+                        <h6>Shila Sarker,<br/>Gopalganj</h6>
+                        <p>See more</p><br/>    
+                    </div>
+                </div>    
+            </div>
+           <div class="col-lg-2 col-md-2 col-sm-4 col-xs-6 my-div">
+                <div class="row">
+                    <div class="col-1g-12 col-md-12 col-sm-12 col-xs-12 text-center" >
+                        <img src="../assets/images/bibahoimage/1.png" class="img-circle img-div-style" width="110px" height="110px" alt="image">     
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-1g-12 col-md-12 col-sm-12 col-xs-12 text-center">
+                        <h6>Shila Sarker,<br/>Gopalganj</h6>
+                        <p>See more</p><br/>    
+                    </div>
+                </div>    
+            </div>
+            <div class="col-lg-2 col-md-2 col-sm-4 col-xs-6 my-div">
+                <div class="row">
+                    <div class="col-1g-12 col-md-12 col-sm-12 col-xs-12 text-center" >
+                        <img src="../assets/images/bibahoimage/1.png" class="img-circle img-div-style" width="110px" height="110px" alt="image">     
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-1g-12 col-md-12 col-sm-12 col-xs-12 text-center">
+                        <h6>Shila Sarker,<br/>Gopalganj</h6>
+                        <p>See more</p><br/>    
+                    </div>
+                </div>    
+            </div>
+        </div>
+        
+        <br/>
+        <div class="row">
+            <div class="col-lg-2 col-md-2 col-sm-4 col-xs-6 my-div">
+                <div class="row">
+                    <div class="col-1g-12 col-md-12 col-sm-12 col-xs-12 text-center" >
+                        <img src="../assets/images/bibahoimage/1.png" class="img-circle img-div-style" width="110px" height="110px" alt="image">     
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-1g-12 col-md-12 col-sm-12 col-xs-12 text-center">
+                        <h6>Shila Sarker,<br/>Gopalganj</h6>
+                        <p>See more</p><br/>    
+                    </div>
+                </div>    
             </div>
 
-            <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 info-box">
-                <div class="info-box--standard" data-mh="info-boxes">
-                    <div class="info-box-image">
-                        <img src="../assets/images/info-box3.png" alt="image">
-                    </div>
-                    <div class="info-box-content">
-                        <h5 class="info-box-title">Data Science/Machine Learning project</h5>
-                        <p class="text">Investigationes demonstraverunt lectores
-                            legere me lius quod ii legunt saepius notare.
-                        </p>
+            <div class="col-lg-2 col-md-2 col-sm-4 col-xs-6 my-div">
+                <div class="row">
+                    <div class="col-1g-12 col-md-12 col-sm-12 col-xs-12 text-center" >
+                        <img src="../assets/images/bibahoimage/1.png" class="img-circle img-div-style" width="110px" height="110px" alt="image">     
                     </div>
                 </div>
-            </div>
 
-            <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 info-box">
-                <div class="info-box--standard" data-mh="info-boxes">
-                    <div class="info-box-image">
-                        <img src="../assets/images/info-box4.png" alt="image">
+                <div class="row">
+                    <div class="col-1g-12 col-md-12 col-sm-12 col-xs-12 text-center">
+                        <h6>Shila Sarker,<br/>Gopalganj</h6>
+                        <p>See more</p><br/>    
                     </div>
-                    <div class="info-box-content">
-                        <h5 class="info-box-title">Web Analytics</h5>
-                        <p class="text">Claritas est etiam processus dynamicus,
-                            qui sequitur mutationem consuetudium lectorum.
-                        </p>
-                    </div>
-                </div>
+                </div>    
             </div>
-
-            <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 info-box">
-                <div class="info-box--standard" data-mh="info-boxes">
-                    <div class="info-box-image">
-                        <img src="../assets/images/info-box5.png" alt="image">
-                    </div>
-                    <div class="info-box-content">
-                        <h5 class="info-box-title">Penetration Testing</h5>
-                        <p class="text">Investigationes demonstraverunt lectores legere
-                            me lius quod ii legunt saepius notare.
-                        </p>
+            <div class="col-lg-2 col-md-2 col-sm-4 col-xs-6 my-div">
+                <div class="row">
+                    <div class="col-1g-12 col-md-12 col-sm-12 col-xs-12 text-center" >
+                        <img src="../assets/images/bibahoimage/1.png" class="img-circle img-div-style" width="110px" height="110px" alt="image">     
                     </div>
                 </div>
+
+                <div class="row">
+                    <div class="col-1g-12 col-md-12 col-sm-12 col-xs-12 text-center">
+                        <h6>Shila Sarker,<br/>Gopalganj</h6>
+                        <p>See more</p><br/>    
+                    </div>
+                </div>    
             </div>
-
-            <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 info-box">
-                <div class="info-box--standard" data-mh="info-boxes">
-                    <div class="info-box-image">
-                        <img src="../assets/images/info-box6.png" alt="image">
-                    </div>
-                    <div class="info-box-content">
-                        <h5 class="info-box-title">Web Content Accessibility Compliance</h5>
-                        <p class="text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
-                            sed diam nonummy nibh euismod.
-                        </p>
+            <div class="col-lg-2 col-md-2 col-sm-4 col-xs-6 my-div">
+                <div class="row">
+                    <div class="col-1g-12 col-md-12 col-sm-12 col-xs-12 text-center" >
+                        <img src="../assets/images/bibahoimage/1.png" class="img-circle img-div-style" width="110px" height="110px" alt="image">     
                     </div>
                 </div>
+
+                <div class="row">
+                    <div class="col-1g-12 col-md-12 col-sm-12 col-xs-12 text-center">
+                        <h6>Shila Sarker,<br/>Gopalganj</h6>
+                        <p>See more</p><br/>    
+                    </div>
+                </div>    
             </div>
-
-            <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 info-box">
-                <div class="info-box--standard" data-mh="info-boxes">
-                    <div class="info-box-image">
-                        <img src="../assets/images/info-box4.png" alt="image">
-                    </div>
-                    <div class="info-box-content">
-                        <h5 class="info-box-title">Team Augmentation</h5>
-                        <p class="text">Claritas est etiam processus dynamicus,
-                            qui sequitur mutationem consuetudium lectorum.
-                        </p>
+           <div class="col-lg-2 col-md-2 col-sm-4 col-xs-6 my-div">
+                <div class="row">
+                    <div class="col-1g-12 col-md-12 col-sm-12 col-xs-12 text-center" >
+                        <img src="../assets/images/bibahoimage/1.png" class="img-circle img-div-style" width="110px" height="110px" alt="image">     
                     </div>
                 </div>
+
+                <div class="row">
+                    <div class="col-1g-12 col-md-12 col-sm-12 col-xs-12 text-center">
+                        <h6>Shila Sarker,<br/>Gopalganj</h6>
+                        <p>See more</p><br/>    
+                    </div>
+                </div>    
             </div>
-
-            <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 info-box">
-                <div class="info-box--standard" data-mh="info-boxes">
-                    <div class="info-box-image">
-                        <img src="../assets/images/info-box5.png" alt="image">
-                    </div>
-                    <div class="info-box-content">
-                        <h5 class="info-box-title">Tech Stack Modernization</h5>
-                        <p class="text">Investigationes demonstraverunt lectores legere
-                            me lius quod ii legunt saepius notare.
-                        </p>
+            <div class="col-lg-2 col-md-2 col-sm-4 col-xs-6 my-div">
+                <div class="row">
+                    <div class="col-1g-12 col-md-12 col-sm-12 col-xs-12 text-center" >
+                        <img src="../assets/images/bibahoimage/1.png" class="img-circle img-div-style" width="110px" height="110px" alt="image">     
                     </div>
                 </div>
-            </div>
 
-            <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 info-box">
-                <div class="info-box--standard" data-mh="info-boxes">
-                    <div class="info-box-image">
-                        <img src="../assets/images/info-box6.png" alt="image">
+                <div class="row">
+                    <div class="col-1g-12 col-md-12 col-sm-12 col-xs-12 text-center">
+                        <h6>Shila Sarker,<br/>Gopalganj</h6>
+                        <p>See more</p><br/>    
                     </div>
-                    <div class="info-box-content">
-                        <h5 class="info-box-title">Growth Hacking</h5>
-                        <p class="text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
-                            sed diam nonummy nibh euismod.
-                        </p>
-                    </div>
-                </div>
+                </div>    
             </div>
         </div>
 
-        <div class="col-sm-12 col-xs-12 text-center">
-            <button class="btn btn--default btn-small btn--secondary btn-hover-shadow">See More</button>
-        </div>
+        <br/>
+        <div class="row">
+            <div class="col-lg-2 col-md-2 col-sm-4 col-xs-6 my-div">
+                <div class="row">
+                    <div class="col-1g-12 col-md-12 col-sm-12 col-xs-12 text-center" >
+                        <img src="../assets/images/bibahoimage/1.png" class="img-circle img-div-style" width="110px" height="110px" alt="image">     
+                    </div>
+                </div>
 
+                <div class="row">
+                    <div class="col-1g-12 col-md-12 col-sm-12 col-xs-12 text-center">
+                        <h6>Shila Sarker,<br/>Gopalganj</h6>
+                        <p>See more</p><br/>    
+                    </div>
+                </div>    
+            </div>
+
+            <div class="col-lg-2 col-md-2 col-sm-4 col-xs-6 my-div">
+                <div class="row">
+                    <div class="col-1g-12 col-md-12 col-sm-12 col-xs-12 text-center" >
+                        <img src="../assets/images/bibahoimage/1.png" class="img-circle img-div-style" width="110px" height="110px" alt="image">     
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-1g-12 col-md-12 col-sm-12 col-xs-12 text-center">
+                        <h6>Shila Sarker,<br/>Gopalganj</h6>
+                        <p>See more</p><br/>    
+                    </div>
+                </div>    
+            </div>
+            <div class="col-lg-2 col-md-2 col-sm-4 col-xs-6 my-div">
+                <div class="row">
+                    <div class="col-1g-12 col-md-12 col-sm-12 col-xs-12 text-center" >
+                        <img src="../assets/images/bibahoimage/1.png" class="img-circle img-div-style" width="110px" height="110px" alt="image">     
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-1g-12 col-md-12 col-sm-12 col-xs-12 text-center">
+                        <h6>Shila Sarker,<br/>Gopalganj</h6>
+                        <p>See more</p><br/>    
+                    </div>
+                </div>    
+            </div>
+            <div class="col-lg-2 col-md-2 col-sm-4 col-xs-6 my-div">
+                <div class="row">
+                    <div class="col-1g-12 col-md-12 col-sm-12 col-xs-12 text-center" >
+                        <img src="../assets/images/bibahoimage/1.png" class="img-circle img-div-style" width="110px" height="110px" alt="image">     
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-1g-12 col-md-12 col-sm-12 col-xs-12 text-center">
+                        <h6>Shila Sarker,<br/>Gopalganj</h6>
+                        <p>See more</p><br/>    
+                    </div>
+                </div>    
+            </div>
+           <div class="col-lg-2 col-md-2 col-sm-4 col-xs-6 my-div">
+                <div class="row">
+                    <div class="col-1g-12 col-md-12 col-sm-12 col-xs-12 text-center" >
+                        <img src="../assets/images/bibahoimage/1.png" class="img-circle img-div-style" width="110px" height="110px" alt="image">     
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-1g-12 col-md-12 col-sm-12 col-xs-12 text-center">
+                        <h6>Shila Sarker,<br/>Gopalganj</h6>
+                        <p>See more</p><br/>    
+                    </div>
+                </div>    
+            </div>
+            <div class="col-lg-2 col-md-2 col-sm-4 col-xs-6 my-div">
+                <div class="row">
+                    <div class="col-1g-12 col-md-12 col-sm-12 col-xs-12 text-center" >
+                        <img src="../assets/images/bibahoimage/1.png" class="img-circle img-div-style" width="110px" height="110px" alt="image">     
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-1g-12 col-md-12 col-sm-12 col-xs-12 text-center">
+                        <h6>Shila Sarker,<br/>Gopalganj</h6>
+                        <p>See more</p><br/>    
+                    </div>
+                </div>    
+            </div>
+        </div>
     </div>
-    <!-- ... End Info-Box -->
 
-    <!-- Offers -->
+    <div class="containerbg">
+        <br>
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+            <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+                <li data-target="#myCarousel" data-slide-to="3"></li>
+            </ol>
+        <!-- Wrapper for slides -->
+            <div class="carousel-inner" role="listbox">
+                <div class="item active">
+                    <img src="../assets/images/bibahoimage/1.png" alt="Chania" height="200">
+                    <div class="carousel-caption">
+                        <h3>Chania</h3>
+                        <p>The atmosphere in Chania has a touch of Florence and Venice.</p>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <img src="../assets/images/bibahoimage/1.png" alt="Chania"  height="200">
+                    <div class="carousel-caption">
+                        <h3>Chania</h3>
+                        <p>The atmosphere in Chania has a touch of Florence and Venice.</p>
+                    </div>
+                </div>
     
-    <div class="showAnimDiv">
-        <div class="container">
-            <div class="row medium-padding120">
-                <div class="col-lg-12">
-                    <div class="offers">
-                        <div class="row">
-                            <div class="col-lg-8 col-md-12 col-sm-12 col-xs-12">
-                                <div class="heading">
-                                    <h4 class="h1 heading-title">How it Works!</h4>
-                                    <div class="heading-line">
-                                        <span class="short-line"></span>
-                                        <span class="long-line"></span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                <div class="item">
+                    <img src="../assets/images/bibahoimage/1.png" alt="Flower"  height="200">
+                    <div class="carousel-caption">
+                        <h3>Flowers</h3>
+                        <p>Beatiful flowers in Kolymbari, Crete.</p>
+                    </div>
+                </div>
 
-                        <div class="row">
-                            <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
-                                <div class="heading">
-                                    <p class="heading-text">Claritas est etiam processus dynamicus, qui sequitur
-                                        mutationem consuetudium.
-                                    </p>
-                                </div>
-
-                                <ul class="list list--secondary">
-                                    <li>
-                                        <i class="seoicon-check"></i>
-                                        <a href="#">Qolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh;</a>
-                                    </li>
-                                    <li>
-                                        <i class="seoicon-check"></i>
-                                        <a href="#">Investigationes demonstraverunt;</a>
-                                    </li>
-                                    <li>
-                                        <i class="seoicon-check"></i>
-                                        <a href="#">Dam liber tempor cum soluta nobis eleifend option congue nihil;</a>
-                                    </li>
-                                    <li>
-                                        <i class="seoicon-check"></i>
-                                        <a href="#">Quarta decima et quinta.</a>
-                                    </li>
-                                </ul>
-
-                                <a href="03_services.html" class="btn btn--default btn-medium btn-border c-primary">
-                                    <span class="text">Learn More</span>
-                                    <span class="semicircle"></span>
-                                </a>
-
-                                <a href="10_testimonials.html" class="btn btn--default btn-medium btn--primary btn-hover-shadow">
-                                    <span class="text">Get a Quote</span>
-                                    <span class="semicircle"></span>
-                                </a>
-
-                            </div>
-
-                            <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
-                                <div class="offers-thumb">
-                                    <svg id="mySVG" viewBox="0 0 600 450">
-                                        <g id="circleID">
-                                            <circle class="circleClass1" cx="100" cy="200" r="50" fill="rgb(242,242,246)" style="visibility: hidden;"/>
-                                            <circle class="circleClassCenter" cx="300" cy="200" r="50" fill="rgb(242,242,246)" style="visibility: hidden;"/>
-                                            <circle class="circleClass2" cx="200" cy="50" r="50"  fill="rgb(242,242,246)" style="visibility: hidden;"/>
-                                            <circle class="circleClass3" cx="400" cy="50" r="50"  fill="rgb(242,242,246)" style="visibility: hidden;"/>
-                                            <circle class="circleClass4" cx="500" cy="200" r="50" fill="rgb(242,242,246)" style="visibility: hidden;"/>
-                                            <circle class="circleClass5" cx="400" cy="350" r="50" fill="rgb(242,242,246)" style="visibility: hidden;"/>
-                                            <circle class="circleClass6" cx="200" cy="350" r="50" fill="rgb(242,242,246)" style="visibility: hidden;"/>
-                                        </g>
-                                        <g id="lineAnimationID">
-                                            <line id="connectedLineAnimation1" x1="145" y1="200" x2="260" y2="200" style="stroke:rgb(242,242,246);stroke-width:10; visibility: hidden;"/>
-                                            <line id="connectedLineAnimation2" x1="220" y1="90" x2="275" y2="165" style="stroke:rgb(242,242,246);stroke-width:10; visibility: hidden;"/>
-                                            <line id="connectedLineAnimation3" x1="375" y1="90" x2="325" y2="165" style="stroke:rgb(242,242,246);stroke-width:10; visibility: hidden;"/>
-                                            <line id="connectedLineAnimation4" x1="340" y1="200" x2="475" y2="200" style="stroke:rgb(242,242,246);stroke-width:10; visibility: hidden;"/>
-                                            <line id="connectedLineAnimation5" x1="385" y1="310" x2="320" y2="220" style="stroke:rgb(242,242,246);stroke-width:10; visibility: hidden;"/>
-                                            <line id="connectedLineAnimation6" x1="223" y1="310" x2="280" y2="230" style="stroke:rgb(242,242,246);stroke-width:10; visibility: hidden;"/>
-                                        </g>
-                                        <g id="connectLineAnimID">
-                                            <line id="lineAnimation1" x1="140" y1="200" x2="155" y2="200" style="stroke:rgb(127,186,40);stroke-width:10;visibility: hidden;" class="element1"/>
-                                            <line id="lineAnimation2" x1="222" y1="90" x2="231" y2="101" style="stroke:rgb(127,186,40);stroke-width:10;visibility: hidden;" class="element2" />
-                                            <line id="lineAnimation3" x1="376" y1="90" x2="367" y2="103" style="stroke:rgb(127,186,40);stroke-width:10;visibility: hidden;" class="element3"/>
-                                            <line id="lineAnimation4" x1="335" y1="200" x2="352" y2="200" style="stroke:rgb(127,186,40);stroke-width:10;visibility: hidden;" class="element4" />
-                                            <line id="lineAnimation5" x1="386" y1="310" x2="375" y2="295" style="stroke:rgb(127,186,40);stroke-width:10;visibility: hidden;" class="element5" />
-                                            <line id="lineAnimation6" x1="223" y1="310" x2="233" y2="295" style="stroke:rgb(127,186,40);stroke-width:10;visibility: hidden;" class="element6" />
-                                        </g>
-
-                                        <ellipse class="ellipse" cx="200" cy="200" rx="180" ry="80"
-                                         style="stroke:rgb(252,176,59);stroke-width:3;"/>
-
-                                        <image id="img1" x="60" y="165" width="80" height="70"
-                                          xlink:href="../assets/images/flatIcon/flatIcon1.png"  style="visibility: hidden"/>
-
-                                        <image id="imgCenter" x="260" y="165" width="80" height="70"
-                                         xlink:href="../assets/images/flatIcon/flatIcon2.png" style="visibility: hidden"/>
-
-                                        <image id="img2" x="160" y="13" width="80" height="70"
-                                         xlink:href="../assets/images/flatIcon/flatIcon3.png" style="visibility: hidden" />
-
-                                        <image id="img3" x="360" y="13" width="80" height="70"
-                                         xlink:href="../assets/images/flatIcon/flatIcon5.png" style="visibility: hidden" />
-
-                                        <image id="img4" x="460" y="165" width="80" height="70"
-                                         xlink:href="../assets/images/flatIcon/flatIcon4.png" style="visibility: hidden" />
-
-                                        <image id="img5" x="360" y="315" width="80" height="70"
-                                         xlink:href="../assets/images/flatIcon/flatIcon6.png" style="visibility: hidden" />
-
-                                        <image id="img6" x="161" y="313" width="80" height="70"
-                                         xlink:href="../assets/images/flatIcon/flatIcon7.png" style="visibility: hidden;" />
-
-                                        <image id="clientBubble" class="clientBubbleImg" x="80" y="103" width="115" height="100"
-                                         xlink:href="../assets/images/flatIcon/Client.png" style = "visibility: hidden;" />
-
-                                        <image id ="productManagerImage" class="productManagerBubble" x="280" y="103" width="115" height="100"
-                                         xlink:href="../assets/images/flatIcon/ProductManager.png" style="visibility: hidden;"/>
-
-                                        <defs>
-                                            <path id="testPath" d="M10 180 q40 -40 110 -58" fill="none" style="display: none;" />
-                                        </defs>
-
-                                        <text  class="spiltzeroText" x="2" y="40%" fill="#765373" font-size="15" font-family="'Lato', sans-serif">
-                                            <textPath xlink:href="#testPath" startOffset="20%">Sprint Zero</textPath> 
-                                        </text>
-                                    </svg>
-
-                                </div>
-                            </div>
-                        </div>
+                <div class="item">
+                    <img src="../assets/images/bibahoimage/1.png" alt="Flower" height="200">
+                    <div class="carousel-caption">
+                        <h3>Flowers</h3>
+                        <p>Beatiful flowers in Kolymbari, Crete.</p>
                     </div>
                 </div>
             </div>
+    <!-- Left and right controls -->
+            <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
         </div>
     </div>
-
-    <!-- ... End Offers -->
-
-    <!-- Our Hacker Network -->
-    <div class="section" id="ourNetwork">
-        <div class="medium-padding120">
-            <div class="heading align-center">
-                <h4 class="h1 heading-title">Our Hacker Network</h4>
-                <div class="heading-line">
-                    <span class="short-line"></span>
-                    <span class="long-line"></span>
-                </div>
-            </div>
-            <!--  <div class="hackerNetworkMap"> -->
-            <svg id="mySVGMap" viewBox="0 0 1300 450">
-                <radialGradient id="RadialGradient">
-                    <stop offset="0%" stop-color="rgb(256,256,256)"/>
-                    <stop offset="40%" stop-color="rgb(256,256,256)"/>
-                    <stop offset="100%" stop-color="rgb(251,188,5)"/>
-                </radialGradient>
-                <g>
-                    <!-- division 1 -->
-                    <circle class="circle-map" cx="193" cy="154" r="4" fill="url(#RadialGradient)"/>
-                    <circle class="circle-map" cx="210" cy="125" r="5" fill="url(#RadialGradient)"/>
-                    <circle class="circle-map" cx="225" cy="145" r="5.5" fill="url(#RadialGradient)"/>
-                    <circle class="circle-map" cx="255" cy="115" r="7" fill="url(#RadialGradient)"/>
-                    <circle class="circle-map" cx="260" cy="170" r="5" fill="url(#RadialGradient)"/>
-                    <circle class="circle-map" cx="335" cy="150" r="4.5" fill="url(#RadialGradient)"/>
-                    <circle class="circle-map" cx="360" cy="125" r="5" fill="url(#RadialGradient)"/>
-                    <circle class="circle-map" cx="385" cy="123" r="4.5" fill="url(#RadialGradient)"/>
-                    <circle class="circle-map" cx="440" cy="323" r="6" fill="url(#RadialGradient)"/>
-                    <!-- division 2 -->
-                    <circle class="circle-map" cx="575" cy="145" r="7" fill="url(#RadialGradient)"/>
-                    <circle class="circle-map" cx="600" cy="128" r="5" fill="url(#RadialGradient)"/>
-                    <circle class="circle-map" cx="680" cy="110" r="5" fill="url(#RadialGradient)"/>
-                    <circle class="circle-map" cx="590" cy="105" r="4" fill="url(#RadialGradient)"/>
-                    <circle class="circle-map" cx="640" cy="88" r="5" fill="url(#RadialGradient)"/>
-
-                    <circle class="circle-map" cx="670" cy="358" r="5" fill="url(#RadialGradient)"/>
-                    <circle class="circle-map" cx="750" cy="160" r="6" fill="url(#RadialGradient)"/>
-                    <circle class="circle-map" cx="860" cy="215" r="6" fill="url(#RadialGradient)"/>
-                    <circle class="circle-map" cx="905" cy="190" r="5" fill="url(#RadialGradient)"/>      
-                    <!-- division 3 -->
-                    <circle class="circle-map" cx="995" cy="335" r="6.5" fill="url(#RadialGradient)"/>
-                    <circle class="circle-map" cx="1105" cy="350" r="7" fill="url(#RadialGradient)"/>
-                </g>
-                <text  x="50%" y="30%" text-anchor="middle"  class="map-svg-text" style="fill:#EFF1F5">
-                    <tspan x="50%" y="45%">liber tempor cum soluta nobis eleifend option</tspan>
-                    <tspan x="50%" y="58%">congue nihil uarta decima et</tspan>
-                </text>
-            </svg>
-            <!-- </div> -->
-        </div>
-    </div>
-
-    <!-- Clients -->
-    <div class="section">
-        <div class="client-carousel medium-padding120">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-6 col-lg-offset-3 col-md-6 col-md-offset-3 col-sm-12 col-xs-12">
-                        <div class="heading align-center">
-                            <h4 class="h1 heading-title">Our Valuable Clients</h4>
-                            <div class="heading-line">
-                                <span class="short-line"></span>
-                                <span class="long-line"></span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                        <div class="row">
-                            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 text-center">
-                                <a href="#" class="client-image">
-                                    <img src="../assets/images/logoNew/client1-hover.png" width="150px" height="150px" alt="logo" class="hover ">
-                                </a>    
-                            </div>
-                            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 text-center">
-                                <a href="#" class="client-image ">
-                                    <img src="../assets/images/logoNew/client2-hover.png" width="150px" height="150px" alt="logo" class="hover client2-img">
-                                </a>    
-                            </div>
-                            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 text-center">
-                                <a href="#" class="client-image">
-                                    <img src="../assets/images/logoNew/client3-hover.png" width="150px" height="150px" alt="logo" class="hover client3-img">
-                                </a>    
-                            </div>
-                            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 text-center">
-                                <a href="#" class="client-image">
-                                    <img src="../assets/images/logoNew/client4-hover.png" width="150px" height="150px" alt="logo" class="hover client4-img">
-                                </a>   
-                            </div>
-                        </div>   
-                    </div>
-                    <div class="col-lg-12 col-md-12 col-md-12 col-sm-12 col-xs-12">
-                        <div class="row">
-                            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 text-center">
-                                <a href="#" class="client-image">
-                                    <img src="../assets/images/logoNew/client5-hover.png" width="150px" height="150px" alt="logo" class="hover client5-img">
-                                </a>    
-                            </div>
-                            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 text-center">
-                                <a href="#" class="client-image">
-                                    <img src="../assets/images/logoNew/client9-hover.png" width="150px" height="150px" alt="logo" class="hover client9-img">
-                                </a>    
-                            </div>
-                            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 text-center">
-                                <a href="#" class="client-image">
-                                    <img src="../assets/images/logoNew/client7-hover.png" width="150px" height="150px" alt="logo" class="hover client7-img"> 
-                                </a>  
-                            </div>
-                            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 text-center">
-                                <a href="#" class="client-image">
-                                    <img src="../assets/images/logoNew/client8-hover.png" width="150px" height="150px" alt="logo" class="hover client8-img">
-                                </a>   
-                            </div>    
-                        </div>
-                    </div>
-                </div>
-                       
-                <!-- <div class="theme-module clients-slider-module">
-
-                    <div class="swiper-container pagination-bottom" data-show-items="4">
-
-                        <div class="swiper-wrapper">
-
-                            <div class="swiper-slide client-item">
-                                <a href="#" class="client-image">
-                                    <img src="../assets/images/logoNew/client1-hover.png" alt="logo" class="hover heightFix">
-                                </a>
-                            </div>
-
-                            <div class="swiper-slide client-item">
-                                <a href="#" class="client-image">
-                                    <img src="../assets/images/logoNew/client2-hover.png" alt="logo" class="hover">
-                                </a>
-                            </div>
-
-                            <div class="swiper-slide client-item">
-                                <a href="#" class="client-image">
-                                    <img src="../assets/images/logoNew/client3-hover.png" alt="logo" class="hover">
-                                </a>
-                            </div>
-
-                            <div class="swiper-slide client-item">
-                                <a href="#" class="client-image">
-                                    <img src="../assets/images/logoNew/client4-hover.png" alt="logo" class="hover">
-                                </a>
-                            </div>
-
-                            <div class="swiper-slide client-item">
-                                <a href="#" class="client-image">
-                                    <img src="../assets/images/logoNew/client5-hover.png" alt="logo" class="hover">
-                                </a>
-                            </div>
-
-                            <div class="swiper-slide client-item">
-                                <a href="#" class="client-image">
-                                    <img src="../assets/images/logoNew/client6-hover.png" alt="logo" class="hover">
-                                </a>
-                            </div>
-
-                            <div class="swiper-slide client-item">
-                                <a href="#" class="client-image">
-                                    <img src="../assets/images/logoNew/client7-hover.png" alt="logo" class="hover">
-                                </a>
-                            </div>
-
-                            <div class="swiper-slide client-item">
-                                <a href="#" class="client-image">
-                                    <img src="../assets/images/logoNew/client8-hover.png" alt="logo" class="hover">
-                                </a>
-                            </div>
-
-                            <div class="swiper-slide client-item">
-                                <a href="#" class="client-image">
-                                    <img src="../assets/images/logoNew/client9-hover.png" alt="logo" class="hover">
-                                </a>
-                            </div>
-
-                        </div> -->
-
-                        <!--Prev Next Arrows-->
-                       <!--  <svg class="btn-next">
-                            <use xlink:href="#arrow-right"></use>
-                        </svg>
-
-                        <svg class="btn-prev">
-                            <use xlink:href="#arrow-left"></use>
-                        </svg>
-                    </div>
-                </div> -->
-            </div>
-        </div>
-    </div>
-    <!-- End Clients -->
 </div>
 
-<svg style="display:none;">
-    <symbol id="arrow-left" viewBox="122.9 388.2 184.3 85">
-        <path d="M124.1,431.3c0.1,2,1,3.8,2.4,5.2c0,0,0.1,0.1,0.1,0.1l34.1,34.1c1.6,1.6,3.7,2.5,5.9,2.5s4.3-0.9,5.9-2.4
-        c1.6-1.6,2.4-3.7,2.4-5.9s-0.9-3.9-2.4-5.5l-19.9-19.5h11.1c1.5,0,2.7-1.5,2.7-3c0-1.5-1.2-3-2.7-3h-17.6c-1.1,0-2.1,0.6-2.5,1.6
-        c-0.4,1-0.2,2.1,0.6,2.9l24.4,24.4c0.6,0.6,0.9,1.3,0.9,2.1s-0.3,1.6-0.9,2.1c-0.6,0.6-1.3,0.9-2.1,0.9s-1.6-0.3-2.1-0.9
-        l-34.2-34.2c0,0,0,0,0,0c-0.6-0.6-0.8-1.4-0.9-1.9c0,0,0,0,0,0c0-0.2,0-0.4,0-0.6c0.1-0.6,0.3-1.1,0.7-1.6c0-0.1,0.1-0.1,0.2-0.2
-        l34.1-34.1c0.6-0.6,1.3-0.9,2.1-0.9s1.6,0.3,2.1,0.9c0.6,0.6,0.9,1.3,0.9,2.1s-0.3,1.6-0.9,2.1l-24.4,24.4c-0.8,0.8-1,2-0.6,3
-        c0.4,1,1.4,1.7,2.5,1.7h125.7c1.5,0,2.7-1,2.7-2.5c0-1.5-1.2-2.5-2.7-2.5H152.6l19.9-20.1c1.6-1.6,2.4-3.8,2.4-6s-0.9-4.4-2.4-6
-        c-1.6-1.6-3.7-2.5-5.9-2.5s-4.3,0.9-5.9,2.4l-34.1,34.1c-0.2,0.2-0.3,0.3-0.5,0.5c-1.1,1.2-1.8,2.8-2,4.4
-        C124.1,430.2,124.1,430.8,124.1,431.3C124.1,431.3,124.1,431.3,124.1,431.3z"></path>
-        <path d="M283.3,427.9h14.2c1.7,0,3,1.3,3,3c0,1.7-1.4,3-3,3H175.1c-1.5,0-2.7,1.5-2.7,3c0,1.5,1.2,3,2.7,3h122.4
-        c4.6,0,8.4-3.9,8.4-8.5c0-4.6-3.8-8.5-8.4-8.5h-14.2c-1.5,0-2.7,1-2.7,2.5C280.7,426.9,281.8,427.9,283.3,427.9z"></path>
-    </symbol>
-    <symbol id="arrow-right" viewBox="122.9 388.2 184.3 85">
-        <path d="M305.9,430.2c-0.1-2-1-3.8-2.4-5.2c0,0-0.1-0.1-0.1-0.1l-34.1-34.1c-1.6-1.6-3.7-2.5-5.9-2.5c-2.2,0-4.3,0.9-5.9,2.4
-        c-1.6,1.6-2.4,3.7-2.4,5.9s0.9,4.1,2.4,5.7l19.9,19.6h-11.1c-1.5,0-2.7,1.5-2.7,3c0,1.5,1.2,3,2.7,3h17.6c1.1,0,2.1-0.7,2.5-1.7
-        c0.4-1,0.2-2.2-0.6-2.9l-24.4-24.5c-0.6-0.6-0.9-1.3-0.9-2.1s0.3-1.6,0.9-2.1c0.6-0.6,1.3-0.9,2.1-0.9c0.8,0,1.6,0.3,2.1,0.9
-        l34.2,34.2c0,0,0,0,0,0c0.6,0.6,0.8,1.4,0.9,1.9c0,0,0,0,0,0c0,0.2,0,0.4,0,0.6c-0.1,0.6-0.3,1.1-0.7,1.6c0,0.1-0.1,0.1-0.2,0.2
-        l-34.1,34.1c-0.6,0.6-1.3,0.9-2.1,0.9s-1.6-0.3-2.1-0.9c-0.6-0.6-0.9-1.3-0.9-2.1s0.3-1.6,0.9-2.1l24.4-24.4c0.8-0.8,1-1.9,0.6-2.9
-        c-0.4-1-1.4-1.6-2.5-1.6H158.1c-1.5,0-2.7,1-2.7,2.5c0,1.5,1.2,2.5,2.7,2.5h119.3l-19.9,20c-1.6,1.6-2.4,3.7-2.4,6s0.9,4.4,2.4,5.9
-        c1.6,1.6,3.7,2.5,5.9,2.5s4.3-0.9,5.9-2.4l34.1-34.1c0.2-0.2,0.3-0.3,0.5-0.5c1.1-1.2,1.8-2.8,2-4.4
-        C305.9,431.3,305.9,430.8,305.9,430.2C305.9,430.2,305.9,430.2,305.9,430.2z"></path>
-        <path d="M146.7,433.9h-14.2c-1.7,0-3-1.3-3-3c0-1.7,1.4-3,3-3h122.4c1.5,0,2.7-1.5,2.7-3c0-1.5-1.2-3-2.7-3H132.4
-        c-4.6,0-8.4,3.9-8.4,8.5c0,4.6,3.8,8.5,8.4,8.5h14.2c1.5,0,2.7-1,2.7-2.5C149.3,434.9,148.1,433.9,146.7,433.9z"></path>
-    </symbol>
-    <symbol id="to-top" viewBox="0 0 32 32">
-        <path d="M17,22 L25.0005601,22 C27.7616745,22 30,19.7558048 30,17 C30,14.9035809 28.7132907,13.1085075 26.8828633,12.3655101
-         L26.8828633,12.3655101 C26.3600217,9.87224935 24.1486546,8 21.5,8 C20.6371017,8 19.8206159,8.19871575 19.0938083,8.55288165
-         C17.8911816,6.43144875 15.6127573,5 13,5 C9.13400656,5 6,8.13400656 6,12 C6,12.1381509 6.00400207,12.275367 6.01189661,12.4115388
-          L6.01189661,12.4115388 C4.23965876,13.1816085 3,14.9491311 3,17 C3,19.7614237 5.23249418,22 7.99943992,22 L16,22 L16,16 L12.75,19.25
-           L12,18.5 L16.5,14 L21,18.5 L20.25,19.25 L17,16 L17,22 L17,22 Z M16,22 L16,27 L17,27 L17,22 L16,22 L16,22 Z" id="cloud-upload"></path>
-    </symbol>
-
-</svg>
-// <script type="text/javascript">
-//$(window).load(function()
-//{
-  // $('#containerbg').easybg({
-  //   images: [
-  //     '../assets/images/bibahoImage/1.jpg', 
-  //     '../assets/images/bibahoImage/2.jpg', 
-  //     '../assets/images/bibahoImage/3.jpg', 
-  //     '../assets/images/bibahoImage/4.jpg'
-  //   ],
-  //   interval: 5000,
-  //   initIndex : 0,
-  //   ignoreError : true,
-  //   debug : false
-  //});
-//)};
-//</script>
-
-
+<!-- <div class="container">
+  <h2>Pagination</h2>
+  <p>The .pagination class provides pagination links:</p>                  
+  <ul class="pagination">
+    <li><a href="#">1</a></li>
+    <li><a href="#">2</a></li>
+    <li><a href="#">3</a></li>
+    <li><a href="#">4</a></li>
+    <li><a href="#">5</a></li>
+  </ul>
+</div>
+ <br/>
+ <br/>    -->
 <script type="text/javascript">
   var initIterator = 0;
     var $breakPoints = false;
@@ -833,175 +722,23 @@
 
     });
 
-     $(document).ready(function() {
-        //Background Image Shown function
-         function circleBgShown1(){
-            $('.circleClass1').css({"visibility":"visible"});
-        }
-        function circleBgShownCenter(){
-            $('.circleClassCenter').css({"visibility":"visible"});
-        }
-        function circleBgShown2(){
-            $('.circleClass2').css({"visibility":"visible"});
-        }
-        function circleBgShown3(){
-            $('.circleClass3').css({"visibility":"visible"});
-        }
-        function circleBgShown4(){
-            $('.circleClass4').css({"visibility":"visible"});
-        }
-        function circleBgShown5(){
-            $('.circleClass5').css({"visibility":"visible"});
-        }
-        function circleBgShown6(){
-            $('.circleClass6').css({"visibility":"visible"});
-        }
+    
 
-        //Image shown function
-        function imgShown1(){
-            $('#img1').css({"visibility":"visible"});
-        }
-        function imgShownCenter(){
-            $('#imgCenter').css({"visibility":"visible"});
-        }
-        function imgShown2(){
-            $('#img2').css({"visibility":"visible"});
-        }
-        function imgShown3(){
-            $('#img3').css({"visibility":"visible"});
-        }
-        function imgShown4(){
-            $('#img4').css({"visibility":"visible"});
-        }
-        function imgShown5(){
-            $('#img5').css({"visibility":"visible"});
-        }
-        function imgShown6(){
-            $('#img6').css({"visibility":"visible"});
-        }
-        //product Manager Image Show After Sometime
-        function productManagerImg(){
-            $('#productManagerImage').css({"visibility":"visible"});
-        }
-
-        function clientBubbleImgdelay(){
-            $('.clientBubbleImg').css({"visibility":"visible"});
-        }
-        //client Bubble Image Durability
-        function clientBubbleImg(){
-            $('#clientBubble').css({"display": "none"});
-        }
-        
-         //client Bubble Image Durability
-        function productManagerBubbleImg(){
-            $('.productManagerBubble').css({"display": "none"});
-        }
-        //Openline Connection Animation
-        function openlineAnim1(){
-             $('#lineAnimation1').css({"visibility":"visible"});
-        }
-        function openlineAnim2(){
-             $('#lineAnimation2').css({"visibility":"visible"});
-        }
-        function openlineAnim3(){
-             $('#lineAnimation3').css({"visibility":"visible"});
-        }
-        function openlineAnim4(){
-             $('#lineAnimation4').css({"visibility":"visible"});
-        }
-        function openlineAnim5(){
-             $('#lineAnimation5').css({"visibility":"visible"});
-        }
-        function openlineAnim6(){
-            $('#lineAnimation6').css({"visibility":"visible"});
-        }
-        //For display connected line after sometime sequentially
-        function connectedLineAnimation1(){
-            $('#connectedLineAnimation1').css({"visibility":"visible"});
-        }
-        function connectedLineAnimation2(){
-            $('#connectedLineAnimation2').css({"visibility":"visible"});
-        }
-        function connectedLineAnimation3(){
-            $('#connectedLineAnimation3').css({"visibility":"visible"});
-        }
-        function connectedLineAnimation4(){
-            $('#connectedLineAnimation4').css({"visibility":"visible"});
-        }
-        function connectedLineAnimation5(){
-            $('#connectedLineAnimation5').css({"visibility":"visible"});
-        }
-        function connectedLineAnimation6(){
-            $('#connectedLineAnimation6').css({"visibility":"visible"});
-        }
-        // ---------Delay for Scroll Correction
-        // function ellipsedelay(){
-        //     $('#ellipseId').css({"visibility":"visible"});
-        // }
-        // function spiltZeroTextdelay(){
-        //     $('#spiltzeroTextId').css({"visibility":"visible"});
-        // }
-
-        // function myfun(){
-        //     setInterval(function(){$("#img1").show(100)}, 2000);
-        //     setInterval(function(){$("#img1").hide(500)}, 7000);
-        //     }
-        var my_div1 = $(".showAnimDiv");
-        var div_top = my_div1.offset().top-250;
-        $(document).scroll(function() {
-            if ($(document).scrollTop()>div_top) {
-                $('#mySVG').show();
-                // myfun();
-                //Background Circle Shown After Sometime
-                setTimeout(circleBgShown1, 100);
-                setTimeout(circleBgShownCenter, 1000);
-                setTimeout(circleBgShown2, 4000);
-                setTimeout(circleBgShown3, 4500);
-                setTimeout(circleBgShown4, 5000);
-                setTimeout(circleBgShown5, 5500);
-                setTimeout(circleBgShown6, 6000);
-                //image Shown later Sometime
-                setTimeout(imgShown1, 100);
-                setTimeout(imgShownCenter, 1000);
-                setTimeout(imgShown2, 4000);
-                setTimeout(imgShown3, 4500);
-                setTimeout(imgShown4, 5000);
-                setTimeout(imgShown5, 5500);
-                setTimeout(imgShown6, 6000);
-                //
-                setTimeout(productManagerImg, 1000);
-                setTimeout(clientBubbleImg,4000);
-                setTimeout(clientBubbleImgdelay,50);
-                setTimeout(productManagerBubbleImg,4000)
-                //$('.clientBubble').fadeOut(5500);
-                //$('.productManagerBubble').fadeOut(6000);
-                setTimeout(connectedLineAnimation1,1500);
-                setTimeout(connectedLineAnimation2,4000);
-                setTimeout(connectedLineAnimation3,4500);
-                setTimeout(connectedLineAnimation4,5000);
-                setTimeout(connectedLineAnimation5,5500);
-                setTimeout(connectedLineAnimation6,6000);
-                setTimeout(openlineAnim1, 1500);
-                setTimeout(openlineAnim2, 4000);
-                setTimeout(openlineAnim3, 4500);
-                setTimeout(openlineAnim4, 5000);
-                setTimeout(openlineAnim5, 5500);
-                setTimeout(openlineAnim6, 6000);
-                
-                // setTimeout(ellipsedelay,50);
-                // setTimeout(spiltZeroTextdelay,50);
-            }
-            else if($(document).scrollTop()<5){
-                $('#mySVG').hide();
-            }
-            
-        });
-    });
-
-    $(document).ready(function () {
-        window.onbeforeunload = function () {
-        window.scrollTo(0,0);
-    };
-    });
+    $(document).ready(function() {           
+         var i =0; 
+         var images = ['../assets/images/bibahoImage/7.jpg','../assets/images/bibahoImage/8.jpg','../assets/images/bibahoImage/9.jpg'];
+         var image = $('#containerbg');
+                        //Initial Background image setup
+         image.css('background-image', 'url(7.jpg)');
+                        //Change image at regular intervals
+         setInterval(function(){   
+         image.fadeOut(100, function () {
+         image.css('background-image', 'url(' + images [i++] +')');
+         image.fadeIn(0);
+         });
+         if(i == images.length)
+          i = 0;
+         }, 15000);            
+     });
 
 </script>

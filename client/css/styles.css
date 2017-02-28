@@ -61,9 +61,26 @@
 
 
 
+
+
+
+
 -------------------------------------------------------------------*/
 /*------------- #VARIABLES --------------*/
 /*------------- #GLOBAL STYLES --------------*/
+/*.nopadding{
+  padding: 0px !important;
+  margin: 0px !important;
+}*/
+.pagination_div{
+  margin: 0 auto !important;
+  display: block !important;
+}
+.img-div-style{
+  margin-top: 5px !important;
+}
+
+
 *, *:before, *:after {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -2742,14 +2759,14 @@ body.author .blog-details-author {
 /*=====================================================
                 Transition
 =======================================================*/
-.fade {
+/*.fade {
   opacity: 0;
   -webkit-transition: opacity .15s linear;
   -o-transition: opacity .15s linear;
   transition: opacity .15s linear; }
 
 .fade.in {
-  opacity: 1; }
+  opacity: 1; }*/
 
 .collapse {
   display: none; }

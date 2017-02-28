@@ -3,7 +3,6 @@
 
     <div class="container mainHeader">
         <div class="header-content-wrapper">
-
             <div class="logo">
                 <a href="/home">
                     <svg id="mySvg" viewBox="0 0 330 50">
@@ -81,7 +80,6 @@
                                 class="anim-shape"
                                 ></rect>
                         </g>
-
                        <!--  Transparent copy of text to keep
                                patterned text selectable -->
                         <use xlink:href="#s-text"
@@ -93,21 +91,18 @@
             </div>
 
             <nav id="primary-menu" class="primary-menu">
-
                 <a href='javascript:void(0)' id="menu-icon-trigger" class="menu-icon-trigger showhide">
                     <span id="menu-icon-wrapper" class="menu-icon-wrapper">
                         <i class="fa fa-bars" aria-hidden="true"></i>
                     </span>
                 </a>
-
                 <!-- menu-icon-wrapper -->
-
                 <ul class="primary-menu-menu">
                     <li class="menu-item-has-children">
-                        <a href="/registration" class="btn btn--default btn-sm joinBtn">Join us</a>
+                        <button type="button" class="btn btn--default btn-sm joinBtn"  ng-click="nav.CreateAccountModal()">Create Account</button>
                     </li>
                     <li class="menu-item-has-children">
-                        <a href="/clientSolution" class="btn btn--default btn-sm solutionBtn">Get a solution</a>
+                         <button type="button" class="btn btn--default btn-sm joinBtn"  ng-click="nav.LogInModal()">Log In</button>
                     </li>
                     <li class="menu-item-has-children">
                         <a href="#" class="btn btn--default btn-sm loginBtn" ng-click="nav.openRightPanel()">Log In</a>
@@ -124,8 +119,6 @@
             </div>
         </div>
     </div>
-
-    <div class="divider"></div>
 
     <div class="container subHeader">
         <div class="header-content-wrapper">
@@ -145,7 +138,6 @@
             </ul>
         </div>
     </div>
-
 </header>
 
 <header class="header headroom--not-bottom headroom--top" id="site-subheader">
@@ -184,24 +176,125 @@
 
                 <ul class="primary-menu-menu">
                     <li class="menu-item-has-children">
-                        <a href="/registration" class="btn btn--default btn-sm joinBtn">Join us</a>
+                        <button type="button" class="btn btn--default btn-sm joinBtn"  ng-click="nav.createAccountModal()">Create Account</button>
                     </li>
                     <li class="menu-item-has-children">
-                        <a href="/clientSolution" class="btn btn--default btn-sm solutionBtn">Get a solution</a>
+                        <button type="button" class="btn btn--default btn-sm joinBtn"  ng-click="nav.LogInModal()">Log In</button>
                     </li>
-                    <!-- <li class="menu-item-has-children">
-                        <a href="#" class="btn btn--default btn-sm loginBtn" ng-click="nav.openRightPanel()">Log In</a>
-                    </li> -->
                 </ul>
             </nav>
         </div>
     </div>
 </header>
 
+<div class="modal fade in" tabindex="-1" id="createAccountModal" role="dialog" data-backdrop="static" data-keyword="false">
+    <div class="modal-dialog">
+      <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <br/>
+                <h3 class="modal-title text-center ">Create Your Account</h3>
+                <p class="text-center" style="font-size: 13px">Please Choose Your Right Option</p>
+            </div>
+            <div class="modal-body">
+                <div class="row" style="width: 85%;margin: 0 auto;padding-bottom: 40px;">
+                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 text-center modalInner_Left" style="color: #fff;padding-bottom: 30px;">
+                        <span style="font-size: 40px;font-weight: bold"><i class="fa fa-eye" aria-hidden="true"></i></span>
+                        <h4>BrideGroom Seekers</h4>
+                        <p style="font-size: 15px;">Create your account and Apply to right person</p><br/>
+                        <a href="/registration"><button type="button" class="btn btn--default btn-sm joinBtn createAccountModalButton-left">Create Account</button></a>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 text-center modalInner_Right" style="color: #fff;padding-bottom: 30px;">
+                        <span style="font-size: 40px;font-weight: bold"><i class="fa fa-users" aria-hidden="true"></i></span>
+                        <h4>BrideGroom Profies</h4>
+                        <p style="font-size: 15px;">Find your right person in a right way.</p><br/>
+                        <a href="/registration"><button type="button" class="btn btn--default btn-sm joinBtn createAccountModalButton-right">Create Account</button></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade in" tabindex="-1" id="logInModal" role="dialog" data-backdrop="static" data-keyword="false">
+    <div class="modal-dialog">
+      <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <br/>
+                <h3 class="modal-title text-center ">Log-In Into Your Account</h3>
+                <p class="text-center" style="font-size: 13px">Please Choose Your Right Option</p>
+            </div>
+            <div class="modal-body">
+                <div class="btn-pref btn-group btn-group-justified btn-group-lg" role="group" aria-label="...">
+                    <div class="btn-group" role="group">
+                        <button type="button" id="stars" class="btn btn-primary" href="#tab1" data-toggle="tab"><span><i class="fa fa-eye" aria-hidden="true"></i></span>
+                            <div>BrideGroom Seekers</div>
+                        </button>
+                    </div>
+                    <div class="btn-group" role="group">
+                        <button type="button" id="favorites" class="btn btn-default" href="#tab2" data-toggle="tab"><span> <i class="fa fa-users" aria-hidden="true"></i></span>
+                            <div>BrideGroom Profiles</div>
+                        </button>
+                    </div>
+                </div>
+                <div class="well">
+                    <div class="tab-content">
+                        <div class="tab-pane fade in active" id="tab1">
+                            <form>
+                                <div class="form-group">
+                                    <label for="exampleInputEmail1">Email address</label>
+                                    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="exampleInputPassword1">Password</label>
+                                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password" required>
+                                    <a href="#">Forgot your password?</a>
+                                </div>
+
+                                <div> 
+                                    <button type="submit" class="btn btn-success">Log In</button>
+                                </div>
+                                <p class="text-center" style="font-size: 15px">New to bibaho.com?<a href="#"> Create Account!</a></p>
+                            </form>
+                        </div>
+                        <div class="tab-pane fade in" id="tab2">
+                            <div class="form-group">
+                                <label for="exampleInputEmail1">Email address</label>
+                                <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputPassword1">Password</label>
+                                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password" required>
+                                <a href="#">Forgot your password?</a>
+                            </div>
+                            <div class="center-block"> 
+                                <button type="submit" class="btn btn-success">Log In</button>
+                            </div>
+                            <p class="text-center" style="font-size: 15px">New to bibaho.com?<a href="#"> Create Account!</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
 <div class="header-spacer"></div>
 
 <script type="text/javascript">
 (function($){
+
+    $(document).ready(function() {
+        $(".btn-pref .btn").click(function () {
+            $(".btn-pref .btn").removeClass("btn-primary").addClass("btn-default");
+            // $(".tab").addClass("active"); // instead of this do the below 
+            $(this).removeClass("btn-default").addClass("btn-primary");   
+        });
+    });
     //--> start of menubar js==========================================
     var settings;
     settings = {

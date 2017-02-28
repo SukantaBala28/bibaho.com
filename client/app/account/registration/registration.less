@@ -25,7 +25,7 @@
 }
 
 #welcomeForm {
-  text-align: center;
+  text-align: ;
   display : flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -36,14 +36,16 @@
     width: 100% !important;
     justify-content: center !important;
   }
-
+  .form-group{
+    margin-left:9px !important;
+  }
   .welcomeFormContainer {
     background: white;
     border: 0 none;
     border-radius: 3px;
     box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.4);
     padding: 20px 30px;
-    width: 400px;
+    width: 490px;
 
     @media screen and (min-width: 300px) and (max-width: 400px){
       width: auto !important;
@@ -89,16 +91,23 @@
 
     input,
     textarea,
-    select {
+       {
       padding: 15px;
       border: 1px solid #ccc;
       border-radius: 3px;
       margin-bottom: 10px;
       width: 100%;
       box-sizing: border-box;
-      font-family: montserrat;
       color: #2C3E50;
       font-size: 13px;
+    }
+
+    select{
+      width: 200px;
+      padding: 7px;
+      border-radius: 4px;
+      border: 1px solid #ccc;
+      margin-bottom:10px;
     }
     .action-button {
       width: 100%;
